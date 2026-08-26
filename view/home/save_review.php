@@ -1,24 +1,11 @@
 <?php
 header('Content-Type: application/json');
+require_once(__DIR__ . "/../../config/db.php");
 
-// ===============================
-// Configuración BD
-// ===============================
-$host = "Localhost";
-$db   = "fletehxn_login";
-$user = "fletehxn_login";
-$pass = "L64tk6MaDqvusRRsp2DW";
-$charset = 'utf8mb4';
+$conexionDB = new db();
+$pdo = $conexionDB->conexion();
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-];
-
-try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
-} catch (PDOException $e) {
+if (is_string($pdo)) {
     echo json_encode([
         'status' => 'error',
         'message' => 'Error de conexión a la base de datos'
@@ -33,30 +20,18 @@ $rating   = filter_input(INPUT_POST, 'rating', FILTER_VALIDATE_INT);
 $phone    = trim($_POST['phone'] ?? '');
 $comments = trim($_POST['comments'] ?? '');
 
-// Validación de calificación (1–5)
 if ($rating === false || $rating < 1 || $rating > 5) {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Calificación inválida'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Calificación inválida']);
     exit;
 }
 
-// Si la calificación es baja, comentarios obligatorios
 if ($rating <= 3 && $comments === '') {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Comentarios requeridos para calificación baja'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Comentarios requeridos para calificación baja']);
     exit;
 }
 
-// Validación básica de teléfono (opcional)
 if ($phone !== '' && !preg_match('/^\d{7,15}$/', $phone)) {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Teléfono inválido'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Teléfono inválido']);
     exit;
 }
 
@@ -76,15 +51,12 @@ try {
     ]);
 
 } catch (PDOException $e) {
-    echo json_encode([
-        'status' => 'error',
-        'message' => 'Error al guardar la calificación'
-    ]);
+    echo json_encode(['status' => 'error', 'message' => 'Error al guardar la calificación']);
     exit;
 }
 
 // ===============================
-// Envío de correo
+// Envío de correo (TODO: actualizar a correo de Pantera)
 // ===============================
 $to = "naviltc28@gmail.com,acua_cedillo@hotmail.com";
 $subject = "Nueva calificación de Fletes y Mudanzas El Lince";
@@ -104,10 +76,5 @@ $body = "
 
 @mail($to, $subject, $body, $headers);
 
-// ===============================
-// Respuesta final
-// ===============================
-echo json_encode([
-    'status' => 'success',
-    'message' => 'Calificación guardada correctamente'
-]);
+echo json_encode(['status' => 'success', 'message' => 'Calificación guardada correctamente']);
+?>
