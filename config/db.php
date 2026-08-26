@@ -1,19 +1,20 @@
 <?php
 class db {
-    private $host="Localhost";
-    private $dbname="CAMBIAR_NOMBRE_BD";
-    private $user="CAMBIAR_USUARIO";
-    private $password="CAMBIAR_PASSWORD";
-    private $charset = 'utf8mb4';
-
     public function conexion(){
         try {
-            $dsn = "mysql:host=" . $this->host . ";dbname=" . $this->dbname . ";charset=" . $this->charset;
+            $host    = getenv('DB_HOST') ?: 'localhost';
+            $port    = getenv('DB_PORT') ?: '5432';
+            $dbname  = getenv('DB_NAME') ?: '';
+            $user    = getenv('DB_USER') ?: '';
+            $pass    = getenv('DB_PASSWORD') ?: '';
+
+            $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
             $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4, time_zone = '-06:00'"
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             ];
-            $pdo = new PDO($dsn, $this->user, $this->password, $options);
+
+            $pdo = new PDO($dsn, $user, $pass, $options);
             return $pdo;
         } catch (PDOException $e) {
             return "Error de conexión: " . $e->getMessage();
