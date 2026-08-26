@@ -41,7 +41,7 @@ function enviarOrdenAShipday($pdo, $facturaId) {
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        "Authorization: Basic mkR1GdPPH8.2z8D5UGaJ6P3IEWhBF9R",
+        "Authorization: Basic " . (getenv("SHIPDAY_API_KEY") ?: "CAMBIAR_SHIPDAY_KEY"),
         "Content-Type: application/json"
     ]);
     

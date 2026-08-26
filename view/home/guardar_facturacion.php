@@ -34,7 +34,7 @@ try {
             return ['success' => false, 'error' => 'Servicio ID ' . $servicio_id . ' no encontrado en la BD'];
         }
 
-        $authHeader = "Basic mkR1GdPPH8.2z8D5UGaJ6P3IEWhBF9R";
+        $authHeader = "Basic " . (getenv("SHIPDAY_API_KEY") ?: "CAMBIAR_SHIPDAY_KEY");
         $url = "https://api.shipday.com/orders";
 
         // CDMX no tiene horario de verano desde 2022, es fijo UTC-6 todo el año.
@@ -138,7 +138,6 @@ try {
     if (!$pdo) {
         throw new Exception("No se pudo establecer la conexión PDO con la base de datos.");
     }
-    $pdo->exec("SET NAMES utf8mb4");
 
     // 5. Deduplicar carrito
     $carritoUnico = [];

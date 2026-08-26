@@ -79,10 +79,9 @@ try {
     if (!$pdo) {
         throw new Exception("No se pudo conectar a la base de datos.");
     }
-    $pdo->exec("SET NAMES utf8mb4");
 
     // Misma credencial que usa guardar_facturacion.php para crear órdenes
-    $authHeader = "Basic mkR1GdPPH8.2z8D5UGaJ6P3IEWhBF9R";
+    $authHeader = "Basic " . (getenv("SHIPDAY_API_KEY") ?: "CAMBIAR_SHIPDAY_KEY");
 
     // 2. Traer los rastreos activos con su shipday_order_id (lo necesitamos
     //    para identificar CUÁL orden específica estamos verificando, ya que
