@@ -1,0 +1,73 @@
+<?php
+// db_bridge.php
+// Sube este archivo a la raíz del servidor remoto (ej: public_html/)
+header('Content-Type: application/json; charset=utf-8');
+
+// Token de seguridad compartido. Debe coincidir con el token del archivo db.php local.
+define('BRIDGE_TOKEN', 'LinceSecureBridgeToken2026!');
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode(['success' => false, 'error' => 'Método no permitido']);
+    exit;
+}
+
+// Recibir cuerpo de la petición
+$input = json_decode(file_get_contents('php://input'), true);
+
+$token  = $input['token']  ?? '';
+$query  = $input['query']  ?? '';
+$params = $input['params'] ?? [];
+$action = $input['action'] ?? 'select'; // 'select' o 'execute'
+
+// Validar Token
+if (empty($token) || $token !== BRIDGE_TOKEN) {
+    http_response_code(403);
+    echo json_encode(['success' => false, 'error' => 'Acceso denegado: Token inválido']);
+    exit;
+}
+
+if (empty($query)) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'error' => 'Query vacío']);
+    exit;
+}
+
+// Cargar la conexión de base de datos remota
+$dbFile = __DIR__ . '/config/db.php';
+if (!file_exists($dbFile)) {
+    echo json_encode(['success' => false, 'error' => 'No se encontró config/db.php en el servidor remoto']);
+    exit;
+}
+
+require_once $dbFile;
+
+try {
+    $db = new db();
+    $pdo = $db->conexion();
+    
+    // Ejecutar consulta de forma segura usando Prepared Statements
+    $stmt = $pdo->prepare($query);
+    $stmt->execute($params);
+
+    if ($action === 'select') {
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode([
+            'success' => true,
+            'data'    => $data,
+            'count'   => count($data)
+        ]);
+    } else {
+        echo json_encode([
+            'success' => true,
+            'affected_rows' => $stmt->rowCount(),
+            'last_insert_id' => $pdo->lastInsertId()
+        ]);
+    }
+} catch (Exception $e) {
+    echo json_encode([
+        'success' => false,
+        'error'   => $e->getMessage()
+    ]);
+}
+?>

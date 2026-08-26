@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Califica a Fletes y Mudanzas El Lince</title>
+
+   <meta property="og:title" content="¡Califica tu experiencia con Fletes y Mudanzas El Lince!">
+<meta property="og:description" content="Tu opinión es muy importante para nosotros. Ayúdanos a mejorar nuestro servicio.">
+<meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcoWOWaCcM40HrDIY3NkVgVRDxXyUNrOPeDyd2k6_zwY9vnxAEGd66xo1&s=10">
+<meta property="og:url" content="https://control.mudanzasellince.com/view/home/form_dinamic.html">
+<meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¡Califica tu experiencia con Fletes y Mudanzas El Lince!">
+    <meta name="twitter:description" content="Tu opinión es muy importante para nosotros. Ayúdanos a mejorar.">
+    <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcoWOWaCcM40HrDIY3NkVgVRDxXyUNrOPeDyd2k6_zwY9vnxAEGd66xo1&s=10">
+    <!-- Favicon desde URL -->
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcoWOWaCcM40HrDIY3NkVgVRDxXyUNrOPeDyd2k6_zwY9vnxAEGd66xo1&s=10">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: #333;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text {
+            flex-grow: 1;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .featured-image-container {
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .rating-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .rating-container input {
+            display: none;
+        }
+
+        .rating-container label {
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.3s ease;
+        }
+
+        .rating-container input:checked~label {
+            color: #FFD700;
+        }
+
+        .rating-container input:checked~label:hover,
+        .rating-container label:hover {
+            color: #FFD700;
+        }
+
+        .rating-container label:hover~label {
+            color: #ccc;
+        }
+
+        .comment-section {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .comment-section label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .comment-section textarea,
+        .comment-section input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-family: inherit;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FFD700;
+            color: #1a1a1a;
+        }
+
+        .form-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-message h3 {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .form-message p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .form-message a {
+            color: #2196F3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form-message a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcoWOWaCcM40HrDIY3NkVgVRDxXyUNrOPeDyd2k6_zwY9vnxAEGd66xo1&s=10" alt="Logo">
+</div>
+        <div class="text">
+            <div class="title">Fletes y Mudanzas El Lince</div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="featured-image-container">
+            <!-- Puedes poner aquí una imagen destacada si quieres -->
+        </div>
+
+        <h2 id="ratingTitle">Califica tu experiencia</h2>
+
+        <form id="reviewForm">
+            <div class="rating-container">
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&#9733;</label>
+            </div>
+
+            <div class="comment-section" id="commentSection">
+                <label for="phone">Tu teléfono (opcional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono aquí...">
+
+                <label for="comments">¿Qué podemos mejorar?</label>
+                <textarea id="comments" name="comments" placeholder="Escribe tus comentarios aquí..."></textarea>
+            </div>
+
+            <button type="button" onclick="submitReview()"><strong>Enviar Calificación</strong></button>
+        </form>
+
+        <div class="form-message" id="positiveMessage">
+            <h3>¡Gracias por tu calificación positiva!</h3>
+            <p>Tu opinión es muy importante para nosotros.</p>
+            <p><a href="https://g.page/r/Cf_3jcV2yKZoEBM/review" target="_blank">Haz clic aquí para dejar tu reseña en Google</a></p>
+        </div>
+
+        <div class="form-message" id="negativeMessage">
+            <h3>Lamentamos que tu experiencia no haya sido satisfactoria.</h3>
+            <p>Nos pondremos en contacto contigo para entender mejor tus comentarios y mejorar nuestro servicio.</p>
+        </div>
+    </div>
+
+    <script>
+        const ratingInputs = document.querySelectorAll('input[name="rating"]');
+        const labels = document.querySelectorAll('.rating-container label');
+        const commentSection = document.getElementById('commentSection');
+
+        ratingInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                updateStars();
+                const ratingValue = document.querySelector('input[name="rating"]:checked').value;
+                if (ratingValue <= 3) {
+                    commentSection.style.display = 'block';
+                } else {
+                    commentSection.style.display = 'none';
+                }
+            });
+        });
+
+        function updateStars() {
+            const ratingInputChecked = document.querySelector('input[name="rating"]:checked');
+            const ratingValue = ratingInputChecked ? parseInt(ratingInputChecked.value) : 0;
+
+            labels.forEach((label, index) => {
+                if (index < ratingValue) {
+                    label.style.color = '#FFD700';
+                } else {
+                    label.style.color = '#ccc';
+                }
+            });
+        }
+
+        function submitReview() {
+    const rating = document.querySelector('input[name="rating"]:checked');
+    if (!rating) {
+        alert('Por favor, selecciona una calificación.');
+        return;
+    }
+
+    const ratingValue = parseInt(rating.value);
+    const phone = document.getElementById('phone').value.trim();
+    const comments = document.getElementById('comments').value.trim();
+
+    // Validaciones:
+    // Si la calificación es ≤3, se requiere comentario
+    if (ratingValue <= 3 && comments === '') {
+        alert('Por favor, escribe tus comentarios para ayudarnos a mejorar.');
+        return;
+    }
+
+    // Validación opcional de teléfono (solo números y entre 7 y 15 dígitos)
+    if (phone !== '' && !/^\d{7,15}$/.test(phone)) {
+        alert('Por favor, ingresa un teléfono válido (solo números, 7-15 dígitos).');
+        return;
+    }
+
+    // Enviar datos vía AJAX
+    const formData = new FormData();
+    formData.append('rating', ratingValue);
+    formData.append('phone', phone);
+    formData.append('comments', comments);
+
+    fetch('/view/home/save_review.php', {
+  method: 'POST',
+  body: formData
+})
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+        // Ocultar formulario
+        document.getElementById('reviewForm').style.display = 'none';
+        document.getElementById('ratingTitle').style.display = 'none';
+        document.querySelector('.featured-image-container').style.display = 'none';
+
+        if (ratingValue >= 4) {
+            document.getElementById('positiveMessage').style.display = 'block';
+            if (ratingValue == 5) {
+                setTimeout(() => {
+                    window.location.href = "https://g.page/r/Cf_3jcV2yKZoEBM/review";
+                }, 4000);
+            }
+        } else {
+            document.getElementById('negativeMessage').style.display = 'block';
+        }
+    })
+    .catch(error => {
+        console.error('Error al enviar la review:', error);
+        alert('Ocurrió un error al enviar tu calificación. Intenta nuevamente.');
+    });
+}
+    </script>
+</body>
+
+</html>

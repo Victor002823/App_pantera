@@ -1,0 +1,134 @@
+/* Fondo */
+.fondo-login {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  background: #FAFAFA !important;
+  padding: 20px !important;
+}
+
+/* Caja del login */
+.fondo-login .login {
+  background: #fff !important;
+  padding: 2rem !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  width: 100% !important;
+  max-width: 380px !important;
+  margin: auto !important;
+}
+
+/* Etiquetas */
+.fondo-login .login label {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  margin-bottom: 5px !important;
+  display: block !important;
+}
+
+/* Inputs */
+.fondo-login .login .form-control {
+  border-radius: 12px !important;
+  padding: 14px !important;
+  font-size: 16px !important;
+  border: 1px solid #ddd !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.fondo-login .login .form-control:focus {
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3) !important;
+  outline: none !important;
+}
+
+/* Ojo contraseña */
+.fondo-login .login .box-eye {
+  position: absolute !important;
+  right: 12px !important;
+  top: 55% !important;
+  transform: translateY(-50%) !important;
+}
+
+.fondo-login .login .box-eye button {
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  color: #666 !important;
+}
+
+/* Botón */
+.fondo-login .login .btn-primary {
+  background: #4a90e2 !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 14px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  width: 100% !important;
+  transition: background 0.3s ease !important;
+}
+
+.fondo-login .login .btn-primary:hover {
+  background: #357abd !important;
+}
+/* CSS recomendado (alta especificidad para sobreescribir Bootstrap si hace falta) */
+.mb-3.position-relative { position: relative; }
+
+/* Input: deja espacio a la derecha para el ojo */
+.mb-3.position-relative .form-control {
+  padding-right: 56px;      /* deja espacio para el ancho del icono */
+  box-sizing: border-box;
+  height: 44px;             /* o el height que uses */
+  line-height: 44px;
+}
+
+/* Box-eye centrado verticalmente y con área táctil cómoda */
+#eyepassword {
+  color:black;
+  position: absolute;
+  right: 20px;              /* separación del borde derecho */
+  top: 50%;
+  transform: translateY(-50%); /* esto centra verticalmente */
+  height: 44px;             /* debe coincidir con la altura del input */
+  width: 44px;              /* área clicable cómoda en móvil */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;     /* evita bloquear click en el input */
+}
+
+/* Habilitar el botón dentro para clicks */
+.mb-3.position-relative .box-eye button {
+  pointer-events: auto;     /* permitir click en el botón */
+  background: transparent;
+  border: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Icono tamaño */
+.mb-3.position-relative .box-eye i {
+  font-size: 18px;          /* ajusta según prefieras */
+  color: #666;
+}
+
+/* Si otros estilos interfieren: forzar con !important (usar solo si es necesario) */
+.mb-3.position-relative .box-eye {
+  /* height: 44px !important; width: 44px !important; top:50% !important; transform:translateY(-50%) !important; */
+}
+
+/* Fondo que ocupa toda la pantalla */
+.fondo-login {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 40vh !important;
+  width: 100vw !important;
+  overflow: hidden !important; /* 👈 también aseguramos aquí */
+}
