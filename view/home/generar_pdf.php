@@ -4,7 +4,7 @@ header('Content-Type: application/json; charset=utf-8');
 
 // NOTA: revisa que esta ruta apunte exactamente a tu autoload.php de Composer.
 // Ajusta la cantidad de "../" según dónde quede este archivo respecto a la carpeta vendor.
-require_once(__DIR__ . "/../../dashword/vendor/autoload.php");
+require_once(__DIR__ . "/../../vendor/autoload.php");
 
 use Dompdf\Dompdf;
 use Dompdf\Options;

@@ -1,0 +1,142 @@
+ /* Contenedor con scroll fluido y bordes limpios */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+            border: 1px solid #ebd8d8;
+            border-radius: 0.25rem;
+            width: 100%;
+        }
+
+        /* Ancho base adaptado para albergar las columnas con comodidad */
+        #tablaCotizaciones {
+            min-width: 1500px; 
+            font-size: 0.85rem;
+        }
+
+        #tablaCotizaciones th, #tablaCotizaciones td {
+            vertical-align: middle;
+            padding: 10px 12px; /* Espaciado interno equilibrado */
+        }
+
+        /* Permite que el inventario se desplace verticalmente */
+        .col-inventario {
+            min-width: 250px !important;  
+            max-width: 350px !important;  
+            white-space: normal !important; /* Fuerza el salto de línea */
+            word-wrap: break-word;          
+        }		
+
+        /* Optimización para exprimir el espacio en pantallas móviles */
+        @media (max-width: 767px) {
+            .card-body {
+                padding: 0.8rem !important; 
+            }
+            .page-heading {
+                padding: 0 10px;
+            }
+        }
+        /* Estilos para que tus botones no se rompan */
+.swal-iso-actions { display: flex !important; justify-content: center !important; gap: 10px !important; margin-top: 15px !important; }
+.swal-iso-btn { 
+    all: unset !important; 
+    padding: 8px 20px !important; 
+    border-radius: 5px !important; 
+    cursor: pointer !important; 
+    font-size: 14px !important; 
+    font-weight: 500 !important; 
+    text-align: center !important; 
+    color: #fff !important; 
+}
+.swal-iso-success { background-color: #5cb85c !important; } 
+.swal-iso-cancel { background-color: #6c757d !important; }
+/* Aseguramos que las clases tengan prioridad absoluta */
+.swal-iso-btn { 
+    all: unset !important; 
+    padding: 8px 20px !important; 
+    border-radius: 5px !important; 
+    cursor: pointer !important; 
+    font-size: 14px !important; 
+    font-weight: 500 !important; 
+    text-align: center !important; 
+    color: #ffffff !important; 
+    display: inline-block !important;
+}
+
+.swal-iso-danger { 
+    background-color: #dc3545 !important; /* Rojo Bootstrap estándar */
+    border: 1px solid #dc3545 !important;
+}
+
+.swal-iso-danger:hover { 
+    background-color: #bb2d3b !important; 
+}
+
+.swal-iso-success { 
+    background-color: #198754 !important; /* Verde Bootstrap estándar */
+    border: 1px solid #198754 !important;
+}
+    /* Contenedor de botones */
+.swal-iso-actions { 
+    display: flex !important; 
+    justify-content: center !important; 
+    gap: 10px !important; 
+    margin-top: 15px !important; 
+}
+
+/* Estructura base del botón (Prioridad absoluta) */
+.swal-iso-btn { 
+    all: unset !important; 
+    display: inline-block !important;
+    padding: 8px 20px !important; 
+    border-radius: 5px !important; 
+    cursor: pointer !important; 
+    font-size: 14px !important; 
+    font-weight: 500 !important; 
+    text-align: center !important; 
+    color: #ffffff !important; 
+    line-height: normal !important;
+}
+
+/* Contenedor */
+.swal-iso-actions { 
+    display: flex !important; justify-content: center !important; gap: 10px !important; margin-top: 15px !important; 
+}
+
+/* Base del botón */
+.swal-iso-btn { 
+    all: unset !important; 
+    display: inline-block !important;
+    padding: 8px 20px !important; 
+    border-radius: 5px !important; 
+    cursor: pointer !important; 
+    font-size: 14px !important; 
+    font-weight: 500 !important; 
+    text-align: center !important; 
+    color: #ffffff !important; 
+    line-height: normal !important;
+    transition: background 0.2s;
+}
+
+/* Colores */
+.swal-iso-danger { background-color: #dc3545 !important; border: 1px solid #dc3545 !important; }
+.swal-iso-danger:hover { background-color: #bb2d3b !important; }
+
+.swal-iso-success { background-color: #198754 !important; border: 1px solid #198754 !important; }
+.swal-iso-success:hover { background-color: #157347 !important; }
+
+.swal-iso-cancel { background-color: #6c757d !important; border: 1px solid #6c757d !important; }
+.swal-iso-cancel:hover { background-color: #5c636a !important; }
+/* Forzar la visibilidad del título de SweetAlert */
+.swal2-title {
+    display: block !important;
+    color: #333 !important; /* Asegura un color oscuro visible */
+    font-size: 1.5em !important;
+    font-weight: 600 !important;
+}
+
+/* Evitar que otras clases oculten el contenedor del título */
+.swal2-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}

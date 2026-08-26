@@ -1,0 +1,1403 @@
+==============================
+FECHA: 2026-07-20 22:12:10
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trjfixmndjtx69ym8qdy"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: trjfixmndjtx69ym8qdy
+ESTADO: completed
+FILAS: 0
+
+BD ACTUAL: login
+
+==============================
+FECHA: 2026-07-20 22:16:08
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trjfixmndjtx69ym8qdy"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: trjfixmndjtx69ym8qdy
+ESTADO: completed
+FILAS: 0
+
+REGISTRO BD:
+Array
+(
+    [id] => 45
+    [valor] => [trjfixmndjtx69ym8qdy]
+    [longitud] => 20
+)
+
+
+BD ACTUAL: login
+
+==============================
+FECHA: 2026-07-20 22:18:17
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trjfixmndjtx69ym8qdy"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: trjfixmndjtx69ym8qdy
+ESTADO: completed
+FILAS: 0
+
+==============================
+FECHA: 2026-07-20 22:19:41
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trjfixmndjtx69ym8qdy"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [status] => completed
+            [openpay_id] => trjfixmndjtx69ym8qdy
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trjfixmndjtx69ym8qdy
+ESTADO: completed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 22:21:48
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trwuklomhw0phoz4qof7"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 39
+            [status] => pending
+            [openpay_id] => trwuklomhw0phoz4qof7
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trwuklomhw0phoz4qof7
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-20 22:39:39
+BODY:
+{"type":"verification","event_date":"2026-07-20T16:39:37-06:00","verification_code":"i23wSrTz","id":"wfgw57o92oz8wefhxjh2"}
+
+VERIFICACION RECIBIDA
+
+==============================
+FECHA: 2026-07-20 22:39:50
+BODY:
+{"type":"verification","event_date":"2026-07-20T16:39:43-06:00","verification_code":"P12mFX1t","id":"wfgw57o92oz8wefhxjh2"}
+
+VERIFICACION RECIBIDA
+
+==============================
+FECHA: 2026-07-20 22:39:50
+BODY:
+{"type":"verification","event_date":"2026-07-20T16:39:44-06:00","verification_code":"hTz9sJcm","id":"wfgw57o92oz8wefhxjh2"}
+
+VERIFICACION RECIBIDA
+
+==============================
+FECHA: 2026-07-20 22:52:09
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T16:44:01-06:00","transaction":{"id":"trufwarnvgllfnm4tsdf","authorization":"623447","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T04:40:03-06:00","operation_date":"2026-07-20T16:44:00-06:00","description":"Servicio 119","error_message":null,"order_id":"ORD-119-20260720104001-8023","payment_method":{"type":"store","reference":"1010103793938730","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010103793938730","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13244826/trufwarnvgllfnm4tsdf/store_confirm"},"amount":500.00,"customer":{"name":"Juan Perez Perez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T04:40:03-06:00","external_id":null,"clabe":null},"fee":{"amount":17.00,"tax":2.7200,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 50
+            [status] => completed
+            [openpay_id] => trufwarnvgllfnm4tsdf
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trufwarnvgllfnm4tsdf
+ESTADO: completed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 22:53:51
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T16:45:42-06:00","transaction":{"id":"trlyku1hhssu5rys0em5","authorization":"623442","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T04:31:19-06:00","operation_date":"2026-07-20T16:45:42-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720103117-9458","payment_method":{"type":"store","reference":"1010100171018507","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100171018507","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13244820/trlyku1hhssu5rys0em5/store_confirm"},"amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T04:31:19-06:00","external_id":null,"clabe":null},"fee":{"amount":41.21,"tax":6.5936,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 49
+            [status] => failed
+            [openpay_id] => trlyku1hhssu5rys0em5
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trlyku1hhssu5rys0em5
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-20 22:56:45
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T16:48:42-06:00","transaction":{"id":"trufwarnvgllfnm4tsdf","authorization":"623447","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T04:40:03-06:00","operation_date":"2026-07-20T16:48:41-06:00","description":"Servicio 119","error_message":"","order_id":"ORD-119-20260720104001-8023","payment_method":{"type":"store","reference":"1010103793938730","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010103793938730","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13244826/trufwarnvgllfnm4tsdf/store_confirm"},"amount":500.00,"customer":{"name":"Juan Perez Perez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T04:40:03-06:00","external_id":null,"clabe":null},"fee":{"amount":17.00,"tax":2.7200,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 50
+            [status] => completed
+            [openpay_id] => trufwarnvgllfnm4tsdf
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trufwarnvgllfnm4tsdf
+ESTADO: completed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 22:58:38
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T16:58:36-06:00","transaction":{"id":"trywetvhbpmtyukfo39k","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T16:58:36-06:00","operation_date":"2026-07-20T16:58:36-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720225834-9204","product_type":"PASARELA_DE_PAGO","amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T16:58:36-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010101531990598","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010101531990598?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246243/trywetvhbpmtyukfo39k/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 55
+            [status] => pending
+            [openpay_id] => trywetvhbpmtyukfo39k
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trywetvhbpmtyukfo39k
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 23:00:59
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T17:00:50-06:00","transaction":{"id":"trp10edq8nprlavuicdt","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T17:00:50-06:00","operation_date":"2026-07-20T17:00:50-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720230049-2018","due_date":"2026-08-19T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"39739496054699389264","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246246/trp10edq8nprlavuicdt/spei_confirm"},"amount":1334.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T17:00:50-06:00","external_id":null,"clabe":null},"method":"bank_account"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 56
+            [status] => pending
+            [openpay_id] => trp10edq8nprlavuicdt
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trp10edq8nprlavuicdt
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 23:07:14
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T16:59:10-06:00","transaction":{"id":"trywetvhbpmtyukfo39k","authorization":"627207","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T16:58:36-06:00","operation_date":"2026-07-20T16:59:08-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720225834-9204","payment_method":{"type":"store","reference":"1010101531990598","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010101531990598","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246243/trywetvhbpmtyukfo39k/store_confirm"},"amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T16:58:36-06:00","external_id":null,"clabe":null},"fee":{"amount":41.21,"tax":6.5936,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 55
+            [status] => pending
+            [openpay_id] => trywetvhbpmtyukfo39k
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trywetvhbpmtyukfo39k
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-20 23:08:06
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T16:52:59-06:00","transaction":{"id":"trxuiwgxtd8h8l9sucnx","authorization":"4955494","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T04:29:02-06:00","operation_date":"2026-07-20T16:52:59-06:00","description":"Servicio 126","error_message":null,"order_id":"ORD-126-20260720102859-3669","due_date":"2026-08-19T23:59:59-06:00","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"04558546104699143237","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13244818/trxuiwgxtd8h8l9sucnx/spei_confirm"},"amount":804.13,"customer":{"name":"Maricela Manzanero","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T04:29:02-06:00","external_id":null,"clabe":null},"fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 48
+            [status] => failed
+            [openpay_id] => trxuiwgxtd8h8l9sucnx
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trxuiwgxtd8h8l9sucnx
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-20 23:12:39
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T17:12:36-06:00","transaction":{"id":"tr1kgtlmt8o5shskdrot","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T17:12:36-06:00","operation_date":"2026-07-20T17:12:36-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720231235-1574","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"store","reference":"1010101874007284","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010101874007284?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246267/tr1kgtlmt8o5shskdrot/store_confirm"},"amount":1334.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T17:12:36-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 57
+            [status] => pending
+            [openpay_id] => tr1kgtlmt8o5shskdrot
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tr1kgtlmt8o5shskdrot
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 23:16:44
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T17:01:39-06:00","transaction":{"id":"trp10edq8nprlavuicdt","authorization":"4300740","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T17:00:51-06:00","operation_date":"2026-07-20T17:01:39-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260720230049-2018","due_date":"2026-08-19T23:59:59-06:00","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"39739496054699389264","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246246/trp10edq8nprlavuicdt/spei_confirm"},"amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T17:00:51-06:00","external_id":null,"clabe":null},"fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 56
+            [status] => pending
+            [openpay_id] => trp10edq8nprlavuicdt
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trp10edq8nprlavuicdt
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-20 23:19:35
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T17:19:35-06:00","transaction":{"id":"tro7o2cvx5o8wvzkuxtw","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T17:19:35-06:00","operation_date":"2026-07-20T17:19:35-06:00","description":"Servicio 128","error_message":null,"order_id":"ORD-128-20260720231933-4535","product_type":"PASARELA_DE_PAGO","amount":985.85,"customer":{"name":"Manuel Lopez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T17:19:35-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010102390817089","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010102390817089?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246280/tro7o2cvx5o8wvzkuxtw/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 58
+            [status] => pending
+            [openpay_id] => tro7o2cvx5o8wvzkuxtw
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tro7o2cvx5o8wvzkuxtw
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-20 23:51:57
+BODY:
+
+
+==============================
+FECHA: 2026-07-20 23:52:03
+BODY:
+
+
+==============================
+FECHA: 2026-07-21 00:02:24
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T17:54:17-06:00","transaction":{"id":"tr1kgtlmt8o5shskdrot","authorization":"627262","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T17:12:37-06:00","operation_date":"2026-07-20T17:54:17-06:00","description":"Servicio 125","error_message":"","order_id":"ORD-125-20260720231235-1574","payment_method":{"type":"store","reference":"1010101874007284","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010101874007284","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246267/tr1kgtlmt8o5shskdrot/store_confirm"},"amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T17:12:37-06:00","external_id":null,"clabe":null},"fee":{"amount":41.21,"tax":6.5936,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 57
+            [status] => pending
+            [openpay_id] => tr1kgtlmt8o5shskdrot
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: tr1kgtlmt8o5shskdrot
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 00:11:19
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T18:11:18-06:00","transaction":{"id":"trnohzbbt5s6v5rnpso7","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T18:11:18-06:00","operation_date":"2026-07-20T18:11:18-06:00","description":"Servicio 129","error_message":null,"order_id":"ORD-129-20260721001117-4640","due_date":"2026-08-19T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"36694525204699374235","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246376/trnohzbbt5s6v5rnpso7/spei_confirm"},"amount":786.51,"currency":"MXN","customer":{"name":"Gabriel Loeza ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T18:11:18-06:00","external_id":null,"clabe":null},"method":"bank_account"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 59
+            [status] => pending
+            [openpay_id] => trnohzbbt5s6v5rnpso7
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trnohzbbt5s6v5rnpso7
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 00:27:02
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T18:11:51-06:00","transaction":{"id":"trnohzbbt5s6v5rnpso7","authorization":"6713818","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T18:11:19-06:00","operation_date":"2026-07-20T18:11:51-06:00","description":"Servicio 129","error_message":null,"order_id":"ORD-129-20260721001117-4640","due_date":"2026-08-19T23:59:59-06:00","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"36694525204699374235","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246376/trnohzbbt5s6v5rnpso7/spei_confirm"},"amount":786.51,"customer":{"name":"Gabriel Loeza ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T18:11:19-06:00","external_id":null,"clabe":null},"fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA DIRECTA:
+Array
+(
+    [0] => Array
+        (
+            [id] => 59
+            [status] => pending
+            [openpay_id] => trnohzbbt5s6v5rnpso7
+            [largo] => 20
+        )
+
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trnohzbbt5s6v5rnpso7
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 03:14:30
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T21:14:20-06:00","transaction":{"id":"trivo26kvw2bw3depiko","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T21:14:20-06:00","operation_date":"2026-07-20T21:14:20-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260721031419-3136","due_date":"2026-08-19T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T21:14:20-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"36071953014699389206","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246776/trivo26kvw2bw3depiko/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 60
+    [status] => pending
+    [openpay_id] => trivo26kvw2bw3depiko
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trivo26kvw2bw3depiko
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 03:33:22
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T21:18:15-06:00","transaction":{"id":"trivo26kvw2bw3depiko","authorization":"6804463","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T21:14:20-06:00","operation_date":"2026-07-20T21:18:15-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260721031419-3136","due_date":"2026-08-19T23:59:59-06:00","amount":1334.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T21:14:20-06:00","external_id":null,"clabe":null},"fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"36071953014699389206","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246776/trivo26kvw2bw3depiko/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 60
+    [status] => pending
+    [openpay_id] => trivo26kvw2bw3depiko
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trivo26kvw2bw3depiko
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 03:38:53
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T21:38:48-06:00","transaction":{"id":"trtz1tt1igl8lg2b4fpz","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T21:38:48-06:00","operation_date":"2026-07-20T21:38:48-06:00","description":"Servicio 127","error_message":null,"order_id":"ORD-127-20260721033846-7314","product_type":"PASARELA_DE_PAGO","amount":3361.77,"customer":{"name":"Erick Montiel ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T21:38:48-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010104128425574","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010104128425574?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246812/trtz1tt1igl8lg2b4fpz/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 61
+    [status] => pending
+    [openpay_id] => trtz1tt1igl8lg2b4fpz
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trtz1tt1igl8lg2b4fpz
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 04:25:08
+BODY:
+{"type":"charge.created","event_date":"2026-07-20T22:25:03-06:00","transaction":{"id":"trxugztf6wua9bol5ntd","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-20T22:25:03-06:00","operation_date":"2026-07-20T22:25:03-06:00","description":"Servicio 128","error_message":null,"order_id":"ORD-128-20260721042502-2308","product_type":"PASARELA_DE_PAGO","amount":985.85,"customer":{"name":"Manuel Lopez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T22:25:03-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010104007465998","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010104007465998?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246853/trxugztf6wua9bol5ntd/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 62
+    [status] => pending
+    [openpay_id] => trxugztf6wua9bol5ntd
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trxugztf6wua9bol5ntd
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 04:33:35
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-20T22:25:31-06:00","transaction":{"id":"trxugztf6wua9bol5ntd","authorization":"628300","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-20T22:25:03-06:00","operation_date":"2026-07-20T22:25:31-06:00","description":"Servicio 128","error_message":null,"order_id":"ORD-128-20260721042502-2308","amount":985.85,"customer":{"name":"Manuel Lopez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-20T22:25:03-06:00","external_id":null,"clabe":null},"fee":{"amount":31.09,"tax":4.9744,"surcharge":null,"base_commission":null,"currency":"MXN"},"payment_method":{"type":"store","reference":"1010104007465998","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010104007465998","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13246853/trxugztf6wua9bol5ntd/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 62
+    [status] => pending
+    [openpay_id] => trxugztf6wua9bol5ntd
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trxugztf6wua9bol5ntd
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 07:20:51
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T01:20:44-06:00","transaction":{"id":"trsbiabmc6ikjse1vl3j","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T01:20:44-06:00","operation_date":"2026-07-21T01:20:44-06:00","description":"Mudanza","error_message":null,"order_id":null,"due_date":"2026-08-20T01:20:43-06:00","product_type":"PAYMENT_LINK","payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trsbiabmc6ikjse1vl3j/card_capture"},"amount":2300.00,"currency":"MXN","customer":{"name":"MARÍA ","last_name":"REFUGIO ","email":"ty@fg.c9m","phone_number":"(467) 567-4676","address":null,"creation_date":"2026-07-21T01:20:44-06:00","external_id":null,"clabe":null},"method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.created
+OPENPAY ID: trsbiabmc6ikjse1vl3j
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 08:37:25
+BODY:
+{"type":"charge.failed","event_date":"2026-07-21T02:37:19-06:00","transaction":{"id":"trgu4jswtl3ji1h09964","authorization":null,"operation_type":"in","transaction_type":"charge","status":"failed","conciliated":true,"creation_date":"2026-07-21T02:37:18-06:00","operation_date":"2026-07-21T02:37:18-06:00","description":"Mudanza","error_message":"The card was declined by the bank","order_id":null,"error_code":3001,"product_type":"PAYMENT_LINK","amount":2300.00,"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.failed
+OPENPAY ID: trgu4jswtl3ji1h09964
+ESTADO: failed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 08:40:19
+BODY:
+{"type":"charge.failed","event_date":"2026-07-21T02:40:19-06:00","transaction":{"id":"trturzqirwgfz0o0l2v6","authorization":null,"operation_type":"in","transaction_type":"charge","status":"failed","conciliated":true,"creation_date":"2026-07-21T02:40:18-06:00","operation_date":"2026-07-21T02:40:18-06:00","description":"Mudanza","error_message":"The card was declined by the bank","order_id":null,"error_code":3001,"product_type":"PAYMENT_LINK","amount":2300.00,"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.failed
+OPENPAY ID: trturzqirwgfz0o0l2v6
+ESTADO: failed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 08:45:01
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T02:44:51-06:00","transaction":{"id":"trsbiabmc6ikjse1vl3j","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T01:20:44-06:00","operation_date":"2026-07-21T02:44:50-06:00","description":"Mudanza","error_message":null,"order_id":null,"card":{"type":"debit","brand":"visa","address":null,"card_number":"411111XXXXXX1111","holder_name":"VICTOR ROJAS DURAN","expiration_year":"28","expiration_month":"12","allows_charges":true,"allows_payouts":false,"bank_name":"BANAMEX","card_business_type":null,"dcc":null,"bank_code":"000"},"due_date":"2026-08-20T01:20:43-06:00","amount":2300.00,"currency":"MXN","customer":{"name":"MARÍA ","last_name":"REFUGIO ","email":"ty@fg.c9m","phone_number":"(467) 567-4676","address":null,"creation_date":"2026-07-21T01:20:44-06:00","external_id":null,"clabe":null},"fee":{"amount":69.20,"tax":11.0720,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trsbiabmc6ikjse1vl3j
+ESTADO: completed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 08:57:58
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T02:57:55-06:00","transaction":{"id":"trikqjaft3r5dpxdysea","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T02:57:55-06:00","operation_date":"2026-07-21T02:57:55-06:00","description":"Flete","error_message":null,"order_id":null,"due_date":"2026-08-20T23:59:59-06:00","product_type":"PAYMENT_LINK","amount":10000.00,"customer":{"name":"LUIS ","last_name":"PARDO","email":"rt@guj.com","phone_number":"(467) 864-3678","address":null,"creation_date":"2026-07-21T02:57:55-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"42945570874700018212","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13247068/trikqjaft3r5dpxdysea/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.created
+OPENPAY ID: trikqjaft3r5dpxdysea
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 22:58:37
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T16:58:35-06:00","transaction":{"id":"trsl0upqnfemoxvd14qy","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T16:58:35-06:00","operation_date":"2026-07-21T16:58:35-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260721225834-2230","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1000.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T16:58:35-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"11593072124700086246","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249131/trsl0upqnfemoxvd14qy/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 63
+    [status] => pending
+    [openpay_id] => trsl0upqnfemoxvd14qy
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trsl0upqnfemoxvd14qy
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 23:19:38
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T17:19:27-06:00","transaction":{"id":"trl0xhjnms1ohofji7lh","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T17:19:27-06:00","operation_date":"2026-07-21T17:19:27-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260721231926-3713","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T17:19:27-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"18412896584700075214","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249210/trl0xhjnms1ohofji7lh/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 64
+    [status] => pending
+    [openpay_id] => trl0xhjnms1ohofji7lh
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trl0xhjnms1ohofji7lh
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 23:30:36
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T17:30:30-06:00","transaction":{"id":"trfohvltppha1qkwicd8","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T17:30:29-06:00","operation_date":"2026-07-21T17:30:29-06:00","description":"Servicio 131","error_message":null,"order_id":"ORD-131-20260721233028-4914","product_type":"PASARELA_DE_PAGO","amount":515.29,"customer":{"name":"Carlos Cervantes ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T17:30:29-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010100972146628","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100972146628?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249234/trfohvltppha1qkwicd8/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 65
+    [status] => pending
+    [openpay_id] => trfohvltppha1qkwicd8
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trfohvltppha1qkwicd8
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 23:37:56
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T17:22:51-06:00","transaction":{"id":"trl0xhjnms1ohofji7lh","authorization":"7364599","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T17:19:27-06:00","operation_date":"2026-07-21T17:22:51-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260721231926-3713","due_date":"2026-08-20T23:59:59-06:00","fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T17:19:27-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"18412896584700075214","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249210/trl0xhjnms1ohofji7lh/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 64
+    [status] => pending
+    [openpay_id] => trl0xhjnms1ohofji7lh
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trl0xhjnms1ohofji7lh
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 23:39:39
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T17:31:35-06:00","transaction":{"id":"trfohvltppha1qkwicd8","authorization":"634200","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T17:30:30-06:00","operation_date":"2026-07-21T17:31:34-06:00","description":"Servicio 131","error_message":null,"order_id":"ORD-131-20260721233028-4914","fee":{"amount":17.44,"tax":2.7904,"surcharge":null,"base_commission":null,"currency":"MXN"},"amount":515.29,"customer":{"name":"Carlos Cervantes ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T17:30:30-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010100972146628","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100972146628","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249234/trfohvltppha1qkwicd8/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 65
+    [status] => pending
+    [openpay_id] => trfohvltppha1qkwicd8
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trfohvltppha1qkwicd8
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-21 23:55:18
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T17:55:14-06:00","transaction":{"id":"trts4c1ydzlkpgsxrort","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T17:55:14-06:00","operation_date":"2026-07-21T17:55:14-06:00","description":"Flete","error_message":null,"order_id":null,"due_date":"2026-08-20T17:55:13-06:00","product_type":"PAYMENT_LINK","payment_method":{"type":"store","reference":"1010100726091679","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100726091679?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249283/trts4c1ydzlkpgsxrort/store_confirm"},"amount":1800.00,"currency":"MXN","customer":{"name":"PANCHO","last_name":"PANZA","email":"panza@wey.com","phone_number":"(334) 565-3355","address":null,"creation_date":"2026-07-21T17:55:14-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.created
+OPENPAY ID: trts4c1ydzlkpgsxrort
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-21 23:57:57
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T17:57:56-06:00","transaction":{"id":"trkesktuzo4zuhggjt6j","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T17:57:56-06:00","operation_date":"2026-07-21T17:57:56-06:00","description":"Flete","error_message":null,"order_id":null,"due_date":"2026-08-20T17:57:56-06:00","product_type":"PAYMENT_LINK","amount":1500.00,"customer":{"name":"PANCHI","last_name":"PANZI","email":"panchi@wey.com","phone_number":"(457) 875-3685","address":null,"creation_date":"2026-07-21T17:57:56-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trkesktuzo4zuhggjt6j/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.created
+OPENPAY ID: trkesktuzo4zuhggjt6j
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:25:33
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:25:23-06:00","transaction":{"id":"trsqu0pzj5zc8nrtq9zq","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:25:23-06:00","operation_date":"2026-07-21T18:25:23-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722002522-8556","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:25:23-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"09746229584700075228","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249359/trsqu0pzj5zc8nrtq9zq/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 66
+    [status] => pending
+    [openpay_id] => trsqu0pzj5zc8nrtq9zq
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trsqu0pzj5zc8nrtq9zq
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:26:23
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:26:23-06:00","transaction":{"id":"tr4qdqky4f5cozpi2n5i","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:26:23-06:00","operation_date":"2026-07-21T18:26:23-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722002622-6070","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"store","reference":"1010100897851102","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100897851102?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249362/tr4qdqky4f5cozpi2n5i/store_confirm"},"amount":1900.00,"currency":"MXN","customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:26:23-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 67
+    [status] => pending
+    [openpay_id] => tr4qdqky4f5cozpi2n5i
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tr4qdqky4f5cozpi2n5i
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:27:14
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:27:05-06:00","transaction":{"id":"triznfmqt7p9ql26pdvx","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:27:05-06:00","operation_date":"2026-07-21T18:27:05-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722002704-8518","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:27:04-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"00746129204700075261","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249363/triznfmqt7p9ql26pdvx/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 68
+    [status] => pending
+    [openpay_id] => triznfmqt7p9ql26pdvx
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: triznfmqt7p9ql26pdvx
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:37:03
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:36:57-06:00","transaction":{"id":"trokedz2rxgru0vryp31","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:36:57-06:00","operation_date":"2026-07-21T18:36:57-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722003656-9116","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"store","reference":"1010100353706708","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010100353706708?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249399/trokedz2rxgru0vryp31/store_confirm"},"amount":1734.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:36:57-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 69
+    [status] => pending
+    [openpay_id] => trokedz2rxgru0vryp31
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trokedz2rxgru0vryp31
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:37:23
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:37:15-06:00","transaction":{"id":"trb5avkb2uj8ywad1z5n","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:37:15-06:00","operation_date":"2026-07-21T18:37:15-06:00","description":"Servicio 126","error_message":null,"order_id":"ORD-126-20260722003714-1755","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":804.13,"customer":{"name":"Maricela Manzanero","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:37:15-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"07239219754700143293","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249401/trb5avkb2uj8ywad1z5n/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 70
+    [status] => pending
+    [openpay_id] => trb5avkb2uj8ywad1z5n
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trb5avkb2uj8ywad1z5n
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:42:26
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:42:23-06:00","transaction":{"id":"tr0z0kvq7nz6ygwgnnez","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T18:42:23-06:00","operation_date":"2026-07-21T18:42:23-06:00","description":"Servicio 126","error_message":null,"order_id":"ORD-126-20260722004222-3326","product_type":"PASARELA_DE_PAGO","amount":804.13,"customer":{"name":"Maricela Manzanero","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:42:23-06:00","external_id":null,"clabe":null},"payment_method":{"type":"store","reference":"1010101191778028","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010101191778028?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249408/tr0z0kvq7nz6ygwgnnez/store_confirm"},"currency":"MXN","method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 71
+    [status] => pending
+    [openpay_id] => tr0z0kvq7nz6ygwgnnez
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tr0z0kvq7nz6ygwgnnez
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 00:44:30
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T18:44:21-06:00","transaction":{"id":"trm1fwiiw9owenkrbaix","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T18:44:21-06:00","operation_date":"2026-07-21T18:44:21-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722004419-1925","product_type":"PAYMENT_LINK","amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:44:21-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trm1fwiiw9owenkrbaix/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 72
+    [status] => pending
+    [openpay_id] => trm1fwiiw9owenkrbaix
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trm1fwiiw9owenkrbaix
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 01:29:03
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T19:28:58-06:00","transaction":{"id":"trguxahebx6up7inyise","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T19:28:58-06:00","operation_date":"2026-07-21T19:28:58-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722012857-8156","product_type":"PAYMENT_LINK","amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T19:28:58-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trguxahebx6up7inyise/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 73
+    [status] => pending
+    [openpay_id] => trguxahebx6up7inyise
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trguxahebx6up7inyise
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 01:45:29
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T19:45:25-06:00","transaction":{"id":"trapl5s5qckwrmzxvc27","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T19:45:25-06:00","operation_date":"2026-07-21T19:45:25-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722014523-2641","product_type":"PAYMENT_LINK","payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trapl5s5qckwrmzxvc27/card_capture"},"amount":1900.00,"currency":"MXN","customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T19:45:25-06:00","external_id":null,"clabe":null},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 74
+    [status] => pending
+    [openpay_id] => trapl5s5qckwrmzxvc27
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trapl5s5qckwrmzxvc27
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 01:49:42
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T19:49:33-06:00","transaction":{"id":"trapl5s5qckwrmzxvc27","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T19:45:25-06:00","operation_date":"2026-07-21T19:49:31-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722014523-2641","card":{"type":"debit","brand":"visa","address":null,"card_number":"411111XXXXXX1111","holder_name":"VICTOR ROJAS DURAN","expiration_year":"28","expiration_month":"12","allows_charges":true,"allows_payouts":false,"bank_name":"BANAMEX","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":1900.00,"currency":"MXN","customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T19:45:25-06:00","external_id":null,"clabe":null},"fee":{"amount":57.60,"tax":9.2160,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 74
+    [status] => pending
+    [openpay_id] => trapl5s5qckwrmzxvc27
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trapl5s5qckwrmzxvc27
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 01:57:11
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T19:57:08-06:00","transaction":{"id":"trguxahebx6up7inyise","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T19:28:58-06:00","operation_date":"2026-07-21T19:57:07-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722012857-8156","card":{"type":"debit","brand":"visa","address":null,"card_number":"411111XXXXXX1111","holder_name":"VICTOR ROJAS DURAN","expiration_year":"29","expiration_month":"05","allows_charges":true,"allows_payouts":false,"bank_name":"BANAMEX","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T19:28:58-06:00","external_id":null,"clabe":null},"fee":{"amount":52.81,"tax":8.4496,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 73
+    [status] => pending
+    [openpay_id] => trguxahebx6up7inyise
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trguxahebx6up7inyise
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 02:12:52
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T20:12:44-06:00","transaction":{"id":"troxis6ngxqwcinyovgz","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T20:12:44-06:00","operation_date":"2026-07-21T20:12:44-06:00","description":"Servicio 129","error_message":null,"order_id":"ORD-129-20260722021242-6249","product_type":"PAYMENT_LINK","amount":1186.51,"customer":{"name":"Gabriel Loeza ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T20:12:44-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/troxis6ngxqwcinyovgz/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 75
+    [status] => pending
+    [openpay_id] => troxis6ngxqwcinyovgz
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: troxis6ngxqwcinyovgz
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 02:13:53
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T20:13:51-06:00","transaction":{"id":"troxis6ngxqwcinyovgz","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T20:12:44-06:00","operation_date":"2026-07-21T20:13:50-06:00","description":"Servicio 129","error_message":null,"order_id":"ORD-129-20260722021242-6249","card":{"type":"debit","brand":"visa","address":null,"card_number":"411111XXXXXX1111","holder_name":"VICTOR ROJAS DURAN","expiration_year":"29","expiration_month":"05","allows_charges":true,"allows_payouts":false,"bank_name":"BANAMEX","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":1186.51,"customer":{"name":"Gabriel Loeza ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T20:12:44-06:00","external_id":null,"clabe":null},"fee":{"amount":36.91,"tax":5.9056,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 75
+    [status] => pending
+    [openpay_id] => troxis6ngxqwcinyovgz
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: troxis6ngxqwcinyovgz
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 02:15:54
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T20:15:49-06:00","transaction":{"id":"trb2r42oyh5ptdfgexhx","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T20:15:49-06:00","operation_date":"2026-07-21T20:15:49-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722021546-1838","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"store","reference":"1010103114902479","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010103114902479?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249621/trb2r42oyh5ptdfgexhx/store_confirm"},"amount":1900.00,"currency":"MXN","customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T20:15:49-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 76
+    [status] => pending
+    [openpay_id] => trb2r42oyh5ptdfgexhx
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trb2r42oyh5ptdfgexhx
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 02:16:14
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T20:16:08-06:00","transaction":{"id":"tri4gwuaq7sgyhmzknvj","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T20:16:08-06:00","operation_date":"2026-07-21T20:16:08-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722021607-1288","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"23529571784700075247","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249622/tri4gwuaq7sgyhmzknvj/spei_confirm"},"amount":1900.00,"currency":"MXN","customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T20:16:08-06:00","external_id":null,"clabe":null},"method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 77
+    [status] => pending
+    [openpay_id] => tri4gwuaq7sgyhmzknvj
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tri4gwuaq7sgyhmzknvj
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 04:58:15
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T22:58:10-06:00","transaction":{"id":"trlxh1bzgdvpctmfzznm","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T22:58:09-06:00","operation_date":"2026-07-21T22:58:09-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722045808-8834","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T22:58:09-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"42690703874700075238","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249862/trlxh1bzgdvpctmfzznm/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 78
+    [status] => pending
+    [openpay_id] => trlxh1bzgdvpctmfzznm
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trlxh1bzgdvpctmfzznm
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:14:15
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T23:14:06-06:00","transaction":{"id":"trnmh9gienobqzohcvke","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T23:14:05-06:00","operation_date":"2026-07-21T23:14:05-06:00","description":"Servicio 126","error_message":null,"order_id":"ORD-126-20260722051404-8463","product_type":"PAYMENT_LINK","amount":804.13,"customer":{"name":"Maricela Manzanero","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:14:05-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trnmh9gienobqzohcvke/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 79
+    [status] => pending
+    [openpay_id] => trnmh9gienobqzohcvke
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trnmh9gienobqzohcvke
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:19:58
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:19:48-06:00","transaction":{"id":"trnmh9gienobqzohcvke","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T23:14:05-06:00","operation_date":"2026-07-21T23:19:48-06:00","description":"Servicio 126","error_message":null,"order_id":"ORD-126-20260722051404-8463","card":{"type":"credit","brand":"visa","address":null,"card_number":"424242XXXXXX4242","holder_name":"VICTOR ROJAS DURAN","expiration_year":"29","expiration_month":"05","allows_charges":true,"allows_payouts":false,"bank_name":"BANCOMER","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":804.13,"customer":{"name":"Maricela Manzanero","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:14:06-06:00","external_id":null,"clabe":null},"fee":{"amount":25.82,"tax":4.1312,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 79
+    [status] => pending
+    [openpay_id] => trnmh9gienobqzohcvke
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trnmh9gienobqzohcvke
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 05:24:02
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T23:23:52-06:00","transaction":{"id":"trdjhmjwenubtdecykaj","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T23:23:51-06:00","operation_date":"2026-07-21T23:23:51-06:00","description":"Servicio 127","error_message":null,"order_id":"ORD-127-20260722052350-6047","product_type":"PAYMENT_LINK","payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trdjhmjwenubtdecykaj/card_capture"},"amount":4411.77,"currency":"MXN","customer":{"name":"Erick Montiel ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:23:51-06:00","external_id":null,"clabe":null},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 80
+    [status] => pending
+    [openpay_id] => trdjhmjwenubtdecykaj
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trdjhmjwenubtdecykaj
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:26:53
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:11:49-06:00","transaction":{"id":"trlxh1bzgdvpctmfzznm","authorization":"6674425","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T22:58:10-06:00","operation_date":"2026-07-21T23:11:49-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722045808-8834","due_date":"2026-08-20T23:59:59-06:00","fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T22:58:10-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"42690703874700075238","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249862/trlxh1bzgdvpctmfzznm/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 78
+    [status] => pending
+    [openpay_id] => trlxh1bzgdvpctmfzznm
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trlxh1bzgdvpctmfzznm
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 05:28:23
+BODY:
+{"type":"charge.failed","event_date":"2026-07-21T23:28:19-06:00","transaction":{"id":"trrerfvqnapzqaehsev5","authorization":null,"operation_type":"in","transaction_type":"charge","status":"failed","conciliated":true,"creation_date":"2026-07-21T23:28:18-06:00","operation_date":"2026-07-21T23:28:18-06:00","description":"Servicio 127","error_message":"The card was declined by the bank","order_id":"ORD-127-20260722052350-6047","error_code":3001,"product_type":"PAYMENT_LINK","amount":4411.77,"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+
+
+EVENTO: charge.failed
+OPENPAY ID: trrerfvqnapzqaehsev5
+ESTADO: failed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:30:24
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:30:21-06:00","transaction":{"id":"trdjhmjwenubtdecykaj","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T23:23:51-06:00","operation_date":"2026-07-21T23:30:20-06:00","description":"Servicio 127","error_message":null,"order_id":"ORD-127-20260722052350-6047","card":{"type":"credit","brand":"mastercard","address":null,"card_number":"510510XXXXXX5100","holder_name":"VICTOR ROJAS","expiration_year":"29","expiration_month":"10","allows_charges":true,"allows_payouts":false,"bank_name":"BANCOPPEL","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":4411.77,"currency":"MXN","customer":{"name":"Erick Montiel ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:23:52-06:00","external_id":null,"clabe":null},"fee":{"amount":130.44,"tax":20.8704,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 80
+    [status] => pending
+    [openpay_id] => trdjhmjwenubtdecykaj
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trdjhmjwenubtdecykaj
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 05:35:17
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T23:35:07-06:00","transaction":{"id":"trme0gjtq0nl9xmzqfqw","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T23:35:07-06:00","operation_date":"2026-07-21T23:35:07-06:00","description":"Servicio 119","error_message":null,"order_id":"ORD-119-20260722053505-9679","product_type":"PAYMENT_LINK","payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trme0gjtq0nl9xmzqfqw/card_capture"},"amount":950.00,"currency":"MXN","customer":{"name":"Juan Perez Perez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:35:07-06:00","external_id":null,"clabe":null},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 81
+    [status] => pending
+    [openpay_id] => trme0gjtq0nl9xmzqfqw
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trme0gjtq0nl9xmzqfqw
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:40:26
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:40:24-06:00","transaction":{"id":"trme0gjtq0nl9xmzqfqw","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T23:35:07-06:00","operation_date":"2026-07-21T23:40:22-06:00","description":"Servicio 119","error_message":null,"order_id":"ORD-119-20260722053505-9679","card":{"type":"debit","brand":"visa","address":null,"card_number":"411111XXXXXX1111","holder_name":"Juan Prez Lpez","expiration_year":"28","expiration_month":"02","allows_charges":true,"allows_payouts":false,"bank_name":"BANAMEX","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":950.00,"currency":"MXN","customer":{"name":"Juan Perez Perez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:35:08-06:00","external_id":null,"clabe":null},"fee":{"amount":30.05,"tax":4.8080,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 81
+    [status] => pending
+    [openpay_id] => trme0gjtq0nl9xmzqfqw
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trme0gjtq0nl9xmzqfqw
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 05:41:37
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T23:41:35-06:00","transaction":{"id":"trlswegzwh48ow2kjei5","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-21T23:41:35-06:00","operation_date":"2026-07-21T23:41:35-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722054133-9259","product_type":"PAYMENT_LINK","amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:41:35-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trlswegzwh48ow2kjei5/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 82
+    [status] => pending
+    [openpay_id] => trlswegzwh48ow2kjei5
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trlswegzwh48ow2kjei5
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:42:57
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:42:49-06:00","transaction":{"id":"trlswegzwh48ow2kjei5","authorization":"246802","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T23:41:35-06:00","operation_date":"2026-07-21T23:42:48-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722054133-9259","card":{"type":"credit","brand":"american_express","address":null,"card_number":"345678XXXXX0007","holder_name":"Luis Martinez Cliente","expiration_year":"28","expiration_month":"02","allows_charges":true,"allows_payouts":false,"bank_name":"AMERICAN EXPRESS","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:41:35-06:00","external_id":null,"clabe":null},"fee":{"amount":80.57,"tax":12.8912,"surcharge":null,"base_commission":null,"currency":"MXN"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 82
+    [status] => pending
+    [openpay_id] => trlswegzwh48ow2kjei5
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trlswegzwh48ow2kjei5
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 05:54:22
+BODY:
+{"type":"charge.created","event_date":"2026-07-21T23:54:16-06:00","transaction":{"id":"trvoaekdtksyqetrr5hw","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-21T23:54:16-06:00","operation_date":"2026-07-21T23:54:16-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722055414-6701","due_date":"2026-08-20T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:54:16-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"31057247734700075289","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249927/trvoaekdtksyqetrr5hw/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 83
+    [status] => pending
+    [openpay_id] => trvoaekdtksyqetrr5hw
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trvoaekdtksyqetrr5hw
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 05:57:04
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:57:03-06:00","transaction":{"id":"trm1fwiiw9owenkrbaix","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T18:44:21-06:00","operation_date":"2026-07-21T23:57:03-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260722004419-1925","card":{"type":"credit","brand":"mastercard","address":null,"card_number":"545454XXXXXX5454","holder_name":"Luis Martinez","expiration_year":"28","expiration_month":"02","allows_charges":true,"allows_payouts":false,"bank_name":"SANTANDER","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":1734.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T18:44:22-06:00","external_id":null,"clabe":null},"fee":{"amount":52.81,"tax":8.4496,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 72
+    [status] => pending
+    [openpay_id] => trm1fwiiw9owenkrbaix
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trm1fwiiw9owenkrbaix
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 06:09:37
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-21T23:54:35-06:00","transaction":{"id":"trvoaekdtksyqetrr5hw","authorization":"6413396","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-21T23:54:16-06:00","operation_date":"2026-07-21T23:54:35-06:00","description":"Servicio 130","error_message":null,"order_id":"ORD-130-20260722055414-6701","due_date":"2026-08-20T23:59:59-06:00","fee":{"amount":8.00,"tax":1.2800,"surcharge":null,"base_commission":null,"currency":"MXN"},"amount":1900.00,"customer":{"name":"Alexis Ávalos Granados","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-21T23:54:16-06:00","external_id":null,"clabe":null},"payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"31057247734700075289","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13249927/trvoaekdtksyqetrr5hw/spei_confirm"},"currency":"MXN","method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 83
+    [status] => pending
+    [openpay_id] => trvoaekdtksyqetrr5hw
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trvoaekdtksyqetrr5hw
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-22 07:25:25
+BODY:
+{"type":"charge.created","event_date":"2026-07-22T01:25:23-06:00","transaction":{"id":"trztplf32lsjqv5ikzen","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-22T01:25:22-06:00","operation_date":"2026-07-22T01:25:22-06:00","description":"Servicio 132","error_message":null,"order_id":"ORD-132-20260722072521-4762","product_type":"PAYMENT_LINK","amount":675.79,"customer":{"name":"Kike novachef","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-22T01:25:22-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trztplf32lsjqv5ikzen/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 84
+    [status] => pending
+    [openpay_id] => trztplf32lsjqv5ikzen
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trztplf32lsjqv5ikzen
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-22 07:32:10
+BODY:
+{"type":"charge.succeeded","event_date":"2026-07-22T01:32:08-06:00","transaction":{"id":"trztplf32lsjqv5ikzen","authorization":"801585","operation_type":"in","transaction_type":"charge","status":"completed","conciliated":false,"creation_date":"2026-07-22T01:25:22-06:00","operation_date":"2026-07-22T01:32:07-06:00","description":"Servicio 132","error_message":null,"order_id":"ORD-132-20260722072521-4762","card":{"type":"credit","brand":"mastercard","address":null,"card_number":"545454XXXXXX5454","holder_name":"Juan ","expiration_year":"28","expiration_month":"02","allows_charges":true,"allows_payouts":false,"bank_name":"SANTANDER","card_business_type":null,"dcc":null,"bank_code":"000"},"amount":675.79,"currency":"MXN","customer":{"name":"Kike novachef","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-22T01:25:23-06:00","external_id":null,"clabe":null},"fee":{"amount":22.10,"tax":3.5360,"surcharge":null,"base_commission":null,"currency":"MXN"},"method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 84
+    [status] => pending
+    [openpay_id] => trztplf32lsjqv5ikzen
+)
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: trztplf32lsjqv5ikzen
+ESTADO: completed
+FILAS UPDATE: 1
+
+==============================
+FECHA: 2026-07-23 01:39:05
+BODY:
+{"type":"charge.created","event_date":"2026-07-22T19:38:55-06:00","transaction":{"id":"trvpjm6uooeoctbehbkd","authorization":null,"operation_type":"in","transaction_type":"charge","status":"charge_pending","conciliated":false,"creation_date":"2026-07-22T19:38:55-06:00","operation_date":"2026-07-22T19:38:55-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260723013854-2487","product_type":"PAYMENT_LINK","amount":1734.95,"customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-22T19:38:55-06:00","external_id":null,"clabe":null},"payment_method":{"type":"redirect","url":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/charges/trvpjm6uooeoctbehbkd/card_capture"},"currency":"MXN","method":"card"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 85
+    [status] => pending
+    [openpay_id] => trvpjm6uooeoctbehbkd
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trvpjm6uooeoctbehbkd
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-23 01:39:15
+BODY:
+{"type":"charge.created","event_date":"2026-07-22T19:39:14-06:00","transaction":{"id":"trgaihityvgzh2zaoekg","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-22T19:39:14-06:00","operation_date":"2026-07-22T19:39:14-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260723013913-6619","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"store","reference":"1010103370866546","barcode_url":"https://sandbox-api.openpay.mx/barcode/1010103370866546?width=1&height=45&text=false","url_store":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13253136/trgaihityvgzh2zaoekg/store_confirm"},"amount":1734.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-22T19:39:14-06:00","external_id":null,"clabe":null},"method":"store"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 86
+    [status] => pending
+    [openpay_id] => trgaihityvgzh2zaoekg
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: trgaihityvgzh2zaoekg
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-07-23 01:39:26
+BODY:
+{"type":"charge.created","event_date":"2026-07-22T19:39:23-06:00","transaction":{"id":"tr0kwuq8lmgxfqsmvfhw","authorization":null,"operation_type":"in","transaction_type":"charge","status":"in_progress","conciliated":false,"creation_date":"2026-07-22T19:39:23-06:00","operation_date":"2026-07-22T19:39:23-06:00","description":"Servicio 125","error_message":null,"order_id":"ORD-125-20260723013922-1979","due_date":"2026-08-21T23:59:59-06:00","product_type":"PASARELA_DE_PAGO","payment_method":{"type":"bank_transfer","bank":"BBVA Bancomer","clabe":"000000000000000001","agreement":"1411217","name":"08338443474701335247","url_spei":"https://sandbox-api.openpay.mx/v1/mxdyiuz9xmgrymvou6bt/customers/13253137/tr0kwuq8lmgxfqsmvfhw/spei_confirm"},"amount":1734.95,"currency":"MXN","customer":{"name":"Luis Martinez ","last_name":"Cliente","email":"pago@local.com","phone_number":"5512345678","address":null,"creation_date":"2026-07-22T19:39:23-06:00","external_id":null,"clabe":null},"method":"bank_account"}}
+
+BUSQUEDA:
+Array
+(
+    [id] => 87
+    [status] => pending
+    [openpay_id] => tr0kwuq8lmgxfqsmvfhw
+)
+
+
+EVENTO: charge.created
+OPENPAY ID: tr0kwuq8lmgxfqsmvfhw
+ESTADO: pending
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-08-02 06:40:29
+BODY:
+
+
+ERROR JSON VACIO
+
+==============================
+FECHA: 2026-08-02 06:41:34
+BODY:
+
+
+ERROR JSON VACIO
+
+==============================
+FECHA: 2026-08-02 06:41:51
+BODY:
+{
+"type":"verification"
+}
+
+VERIFICACION RECIBIDA
+
+==============================
+FECHA: 2026-08-02 06:42:03
+BODY:
+{
+"type":"charge.succeeded",
+"transaction":{
+"id":"op123456789"
+}
+}
+
+BUSQUEDA:
+
+
+EVENTO: charge.succeeded
+OPENPAY ID: op123456789
+ESTADO: completed
+FILAS UPDATE: 0
+
+==============================
+FECHA: 2026-08-02 07:37:51
+BODY:
+
+
+ERROR JSON VACIO
+

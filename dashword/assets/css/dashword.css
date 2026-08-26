@@ -1,0 +1,232 @@
+.submenu-item > a,h2,.sidebar-title {
+  color: #ffffff !important;
+}
+.sidebar a:hover span,
+.sidebar a:focus span,
+.sidebar a.active span {
+  color: red;
+}
+.sub {
+    color:#5774C9;
+}
+.logout-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 160px;
+    padding: 10px 14px;
+
+    color: #8A1500;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border: 1.5px solid #8A1500;
+    border-radius: 12px;
+
+    transition: all 0.25s ease;
+}
+
+.logout-link i {
+    font-size: 18px;
+}
+
+/* Hover / toque */
+.logout-link:hover {
+    background-color: #8A1500;
+    color: #ffffff;
+}
+
+
+  .dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Tarjeta principal moderna (ahora con dos columnas internas) */
+  .card {
+    background: linear-gradient(135deg, #4e79a7, #77a6d2);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    min-width: 340px;              /* mayor ancho mínimo para evitar apilamiento */
+    flex: 1 1 340px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  /* Contenido en fila: dos columnas para Totales */
+  .card .totals {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;            /* evitar que se envuelvan */
+  }
+  .total-item {
+    flex: 0 0 calc(50% - 6px);    /* forzar 50% cada una (restando la mitad del gap) */
+    background: rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 12px 50px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    transition: transform 0.18s ease;
+    box-sizing: border-box;
+  }
+  .total-item:hover { transform: translateY(-4px); }
+  .total-item h4 {
+    color:white;  
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  .total-item p {
+    margin: 6px 0 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;          /* prevenir salto de línea en números largos */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Ajuste para pantallas muy pequeñas: apilar debajo de 420px */
+@media (max-width: 420px) {
+  .card {
+    min-width: auto;
+    flex-basis: 100%;
+  }
+
+  .card .totals {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .total-item {
+    flex: 1 1 auto;
+  }
+}
+    .chart-container { flex-basis: 100%; }
+  }
+
+  .chart-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    flex: 3 1 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  .chart-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  }
+
+  h3.section-title {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #2e3a59;
+    font-weight: 600;
+    border-left: 5px solid #4e79a7;
+    padding-left: 10px;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .filters select, .filters input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8fafc;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .filters button {
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #4e79a7, #3b5f8a);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Canvas con efecto moderno */
+  canvas {
+    width: 100% !important;
+    max-height: 340px;
+    background: linear-gradient(145deg, #f7f9fb, #ffffff);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+    animation: fadeIn 0.6s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .minmax {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  .max { color: #1a7c1a; }
+  .min { color: #d33; }
+      .skeleton {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #e0e0e0 25%,
+    #f5f5f5 37%,
+    #e0e0e0 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 4px;
+}
+
+.skeleton {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.25) 25%,
+    rgba(230, 230, 230, 0.45) 37%,
+    rgba(200, 200, 200, 0.25) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  width: 90px;
+  height: 1.1em;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}

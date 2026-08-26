@@ -1,0 +1,52 @@
+==============================
+FECHA: 2026-07-20 19:28:49
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"TEST123"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: TEST123
+NUEVO ESTADO: completed
+FILAS ACTUALIZADAS: 0
+
+==============================
+FECHA: 2026-07-20 19:31:06
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"troal92zbklqxzrdk5bf"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: troal92zbklqxzrdk5bf
+NUEVO ESTADO: completed
+FILAS ACTUALIZADAS: 1
+
+==============================
+FECHA: 2026-07-20 19:48:45
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trnddtyxg3facpypovw5"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: trnddtyxg3facpypovw5
+NUEVO ESTADO: completed
+FILAS ACTUALIZADAS: 1
+
+==============================
+FECHA: 2026-07-20 19:55:09
+BODY:
+{"type":"charge.succeeded","transaction":{"id":"trjfixmndjtx69ym8qdy"}}
+
+EVENTO: charge.succeeded
+OPENPAY ID: trjfixmndjtx69ym8qdy
+NUEVO ESTADO: completed
+FILAS ACTUALIZADAS: 1
+
+==============================
+FECHA: 2026-07-20 20:08:56
+BODY:
+
+
+==============================
+FECHA: 2026-07-20 20:08:58
+BODY:
+{"type":"verification","event_date":"2026-07-20T14:08:57-06:00","verification_code":"IYGqUk0x","id":"wfgw57o92oz8wefhxjh2"}
+
+VERIFICACION RECIBIDA
+
