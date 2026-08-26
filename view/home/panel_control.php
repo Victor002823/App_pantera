@@ -683,7 +683,7 @@ ob_end_flush();
           
 <?php include __DIR__ . '/logica_local.php'; ?> 
           
-<?php include __DIR__ . '/cotizacion_pdf.php'; ?>        
+<!-- cotizacion_pdf.php eliminado, no existe -->        
           
 <?php include __DIR__ . '/logica02.php'; ?>        
 
