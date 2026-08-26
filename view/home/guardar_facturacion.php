@@ -181,15 +181,6 @@ try {
         (
             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
-        ON DUPLICATE KEY UPDATE
-            cantidad        = VALUES(cantidad),
-            total           = VALUES(total),
-            fecha           = VALUES(fecha),
-            cliente         = VALUES(cliente),
-            asesor          = VALUES(asesor),
-            fecha_servicio  = VALUES(fecha_servicio),
-            hora_servicio   = VALUES(hora_servicio),
-            anticipo        = VALUES(anticipo)
     ");
 
     foreach ($carritoUnico as $item) {
