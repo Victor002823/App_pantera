@@ -1,4 +1,5 @@
 backups/
 logs/*.log
-*.sql
-.env
+database.sql
+backup*.sql
+*.env
