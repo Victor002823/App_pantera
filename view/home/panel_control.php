@@ -1033,16 +1033,54 @@ async function guardarHuellaDirecto(correo) {
 
     if (typeof AndroidHuella !== 'undefined' && typeof AndroidHuella.dispararLectorNativoRegistro === 'function') {
         AndroidHuella.dispararLectorNativoRegistro(correo);
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'No disponible',
-            text: 'El lector de huella nativo no está disponible en este dispositivo.',
-            confirmButtonText: 'Cerrar',
-            customClass: { confirmButton: 'btn-lince-cancel' },
-            buttonsStyling: false
-        });
+        return;
     }
+
+    if (window.PublicKeyCredential && navigator.credentials && navigator.credentials.create) {
+        try {
+            const challenge = new Uint8Array(32);
+            window.crypto.getRandomValues(challenge);
+            const userId = new TextEncoder().encode(correo);
+
+            const credential = await navigator.credentials.create({
+                publicKey: {
+                    challenge: challenge,
+                    rp: { name: 'Transportes y Mudanzas Pantera' },
+                    user: { id: userId, name: correo, displayName: correo },
+                    pubKeyCredParams: [
+                        { type: 'public-key', alg: -7 },
+                        { type: 'public-key', alg: -257 }
+                    ],
+                    authenticatorSelection: {
+                        authenticatorAttachment: 'platform',
+                        userVerification: 'required'
+                    },
+                    timeout: 60000,
+                    attestation: 'none'
+                }
+            });
+
+            if (credential) {
+                window.resultadoRegistroHuella(true, 'OK');
+            } else {
+                window.resultadoRegistroHuella(false, 'CANCELADO');
+            }
+        } catch (err) {
+            console.error('Error WebAuthn al registrar huella:', err);
+            window.resultadoRegistroHuella(false, 'CANCELADO');
+        }
+        return;
+    }
+
+    Swal.fire({
+        icon: 'error',
+        title: 'No disponible',
+        text: 'Este dispositivo o navegador no soporta el registro de huella.',
+        confirmButtonText: 'Cerrar',
+        customClass: { confirmButton: 'btn-lince-cancel' },
+        buttonsStyling: false
+    });
+}
 }
 
 // Llamada por Android UNICAMENTE despues de que el sensor de huella
