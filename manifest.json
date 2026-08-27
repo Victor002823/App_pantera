@@ -1,8 +1,8 @@
 {
-    "name": "Control El Lince",
-    "short_name": "Cotizaciones",
+    "name": "Transportes y Mudanzas Pantera",
+    "short_name": "Pantera",
     "id": "/",
-    "start_url": "https://control.mudanzasellince.com",
+    "start_url": "/panel",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#000000",
