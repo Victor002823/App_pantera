@@ -1081,7 +1081,6 @@ async function guardarHuellaDirecto(correo) {
         buttonsStyling: false
     });
 }
-}
 
 // Llamada por Android UNICAMENTE despues de que el sensor de huella
 // confirmo (o fallo) de verdad. Antes esto no existia, por lo que el
