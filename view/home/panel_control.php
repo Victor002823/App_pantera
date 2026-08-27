@@ -1061,6 +1061,10 @@ async function guardarHuellaDirecto(correo) {
             });
 
             if (credential) {
+                const rawIdBytes = new Uint8Array(credential.rawId);
+                let binario = '';
+                for (let i = 0; i < rawIdBytes.byteLength; i++) binario += String.fromCharCode(rawIdBytes[i]);
+                window._webauthnCredentialIdPendiente = btoa(binario);
                 window.resultadoRegistroHuella(true, 'OK');
             } else {
                 window.resultadoRegistroHuella(false, 'CANCELADO');
@@ -1103,7 +1107,9 @@ window.resultadoRegistroHuella = async function(exito, mensaje) {
         return;
     }
 
-    const nuevoToken = 'LINCE_BIOMETRIC_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
+    const nuevoToken = window._webauthnCredentialIdPendiente
+        || ('LINCE_BIOMETRIC_' + Math.random().toString(36).substring(2) + Date.now().toString(36));
+    window._webauthnCredentialIdPendiente = null;
 
     try {
         const res = await fetch('/view/home/registrar_huella.php', {
