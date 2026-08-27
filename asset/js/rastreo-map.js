@@ -19,10 +19,9 @@ function iniciarMapa() {
     tap: false
   }).setView([19.4326, -99.1332], 12);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 20,
-    attribution: '&copy; OpenStreetMap &copy; CARTO',
-    subdomains: 'abcd'
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
   }).addTo(mapa);
 
   // Asegurar que Leaflet calcule bien el espacio y evite parpadeos en los elementos flotantes
