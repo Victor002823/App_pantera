@@ -314,7 +314,7 @@ $stats = $pdo->query("
             <div class="modal-body text-center bg-dark">
 
                 <img 
-                    src="https://control.mudanzasellince.com/dashword/qr.png"
+                    src="/dashword/qr.png"
                     class="img-fluid rounded"
                     alt="Imagen">
 

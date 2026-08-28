@@ -165,7 +165,7 @@ function actualizarUI(data) {
     if (statusTexto) statusTexto.textContent = data.estado_liga === 'completado' ? 'Entregado' : 'No entregado';
 
     setTimeout(() => {
-      window.location.href = 'https://mudanzasellince.com/';
+      window.location.href = '/';
     }, 4000);
   } else {
     if (statusPill) statusPill.className = 'status-pill';
@@ -270,7 +270,7 @@ async function consultarEstado(manual = false) {
         document.getElementById('alertTexto').textContent = 'Esta liga de rastreo ya no está disponible.';
       }
       setTimeout(() => {
-        window.location.href = 'https://mudanzasellince.com/';
+        window.location.href = '/';
       }, 4000);
       return;
     }

@@ -23,8 +23,8 @@
 <nav id="mainNavbar" class="navbar fixed-top navbar-light transition-navbar" style="height: 60px;">
   <div class="container-fluid d-flex justify-content-between align-items-center px-3">
     <!-- Marca -->
-    <a class="navbar-brand mb-0 fw-bold" href="https://control.mudanzasellince.com/panel" style="font-size: 1.2rem; letter-spacing: -0.5px;">
-      Control<span class="text-primary">.ellince</span>
+    <a class="navbar-brand mb-0 fw-bold" href="/panel" style="font-size: 1.2rem; letter-spacing: -0.5px;">
+      Pantera<span class="text-primary">.TM</span>
     </a>
     <!-- Botones -->
     <ul class="navbar-nav d-flex flex-row align-items-center gap-2 mb-0">

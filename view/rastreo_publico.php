@@ -15,7 +15,7 @@ if (!isset($tokenParaVista)) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="Rastreo en vivo · El Lince">
 <meta property="og:description" content="Sigue en tiempo real tu mudanza <?php echo htmlspecialchars($destinoPreview); ?>. Toca para ver la ubicación.">
-<meta property="og:image" content="https://control.mudanzasellince.com/img.php/v<?php echo time(); ?>.png">
+<meta property="og:image" content="https://app-pantera.onrender.com/img.php/v<?php echo time(); ?>.png">
 <meta property="og:url" content="<?php echo htmlspecialchars($urlActual); ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Fletes y Mudanzas El Lince">
@@ -23,7 +23,7 @@ if (!isset($tokenParaVista)) {
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Rastreo en vivo · El Lince">
 <meta name="twitter:description" content="Sigue en tiempo real tu mudanza.">
-<meta name="twitter:image" content="https://control.mudanzasellince.com/asset/logo1023.png">
+<meta name="twitter:image" content="https://app-pantera.onrender.com/icon-512.png">
 <title>Rastreo · El Lince</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -238,7 +238,7 @@ if (!isset($tokenParaVista)) {
   <div class="map-hero">
     <div class="brand">
       <div class="brand-mark">
-        <img src="https://control.mudanzasellince.com/asset/logo1023.png" alt="Logo El Lince">
+        <img src="https://app-pantera.onrender.com/icon-512.png" alt="Logo Transportes y Mudanzas Pantera">
       </div>
       <div>
         <div class="brand-name">El Lince</div>

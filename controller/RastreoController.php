@@ -31,7 +31,7 @@ class RastreoController
             return;
         }
         if (!$this->model->esLigaValida($liga)) {
-            header('Location: https://mudanzasellince.com/');
+            header('Location: /');
             exit;
         }
 
@@ -52,7 +52,7 @@ class RastreoController
         }
 
         if ($terminado) {
-            header('Location: https://mudanzasellince.com/');
+            header('Location: /');
             exit;
         }
 

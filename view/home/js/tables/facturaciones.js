@@ -1359,8 +1359,8 @@ function renderPreviewHTMLFacturas(){
                     RFC: RODV930126UI7<br>
                     Teléfono: 5563285207<br>
                     Dirección: Doctor Andrade 72 CP:06720<br>
-                    Correo: fletesymudanzasellince@gmail.com<br>
-                    mudanzasellince.com
+                    Correo: CAMBIAR_CORREO<br>
+                    app-pantera.onrender.com
                 </p>
             </div>
             <div class="text-right text-xs text-slate-500 leading-relaxed">
@@ -1536,8 +1536,8 @@ function compilarPdfFacturasEnSegundoPlano(folio){
                     "RFC: RODV930126UI7",
                     "Teléfono: 5563285207",
                     "Dirección: Doctor Andrade 72 CP:06720",
-                    "Correo: fletesymudanzasellince@gmail.com",
-                    "mudanzasellince.com"
+                    "Correo: CAMBIAR_CORREO",
+                    "app-pantera.onrender.com"
                 ];
 
                 const infoDerecha = [

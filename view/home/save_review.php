@@ -59,9 +59,9 @@ try {
 // Envío de correo (TODO: actualizar a correo de Pantera)
 // ===============================
 $to = "naviltc28@gmail.com,acua_cedillo@hotmail.com";
-$subject = "Nueva calificación de Fletes y Mudanzas El Lince";
+$subject = "Nueva calificación de Transportes y Mudanzas Pantera";
 
-$headers  = "From: Fletes y Mudanzas El Lince <contacto@mudanzasellince.com>\r\n";
+$headers  = "From: Transportes y Mudanzas Pantera <contacto@app-pantera.onrender.com>\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 $stars = str_repeat('⭐', $rating);

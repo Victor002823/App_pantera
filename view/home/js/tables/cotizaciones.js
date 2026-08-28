@@ -607,7 +607,7 @@ function construirTemplateHTML(folio, fecha, hora, carrito, totalGeneral) {
             <div style="display:flex; align-items:center; gap:10px;">
                 <img src="/asset/logo1023.png" style="width:110px; height:110px; object-fit:contain; margin-bottom:10px;">
                 <div style="margin-left:10px;">
-                    <strong style="font-size:20px; color: #1a202c; font-family: sans-serif;">Fletes y Mudanzas El Lince</strong><br>
+                    <strong style="font-size:20px; color: #1a202c; font-family: sans-serif;">Transportes y Mudanzas Pantera</strong><br>
                     <small style="color:#718096; font-size:13px; font-weight: 600;">Formato de Cotizacion</small>
                 </div>
             </div>
@@ -630,7 +630,7 @@ function construirTemplateHTML(folio, fecha, hora, carrito, totalGeneral) {
             <tbody style="background: white;">${tablaFilasHTML}${filasRelleno}</tbody>
         </table>
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; margin-bottom: 25px; font-size:15px; font-family: sans-serif; color: #1a202c;">
-            <div><strong>mudanzasellince.com</strong></div>
+            <div><strong>app-pantera.onrender.com</strong></div>
             <div><strong>Total: $<span>${totalGeneral.toLocaleString('es-MX', {minimumFractionDigits: 2})}</span></strong></div>
         </div>
         <div style="margin-top:20px;">

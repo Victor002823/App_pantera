@@ -243,8 +243,8 @@ doc.setFontSize(12);
 doc.text("RFC: RODV930126UI7", 15, encabezadoY);
 doc.text("Teléfono: 5563285207", 15, encabezadoY + 5);
 doc.text("Dirección: Doctor Andrade 72 CP:06720", 15, encabezadoY + 10);
-doc.text("mudanzasellince.com", 15, encabezadoY + 15);
-doc.text("Correo: fletesymudanzasellince@gmail.com", 15, encabezadoY + 20);
+doc.text("app-pantera.onrender.com", 15, encabezadoY + 15);
+doc.text("Correo: CAMBIAR_CORREO", 15, encabezadoY + 20);
 
 doc.setFontSize(12);
 doc.text(`Asesor: ${asesor}`, 150, encabezadoY);

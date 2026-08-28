@@ -780,7 +780,7 @@ class="brand-logo-img">
 <div class="brand-text">
 
 <h1>
-Fletes y Mudanzas El Lince
+Transportes y Mudanzas Pantera
 </h1>
 
 <p>
@@ -959,7 +959,7 @@ Beneficiario
 </div>
 
 <div class="info-value">
-Fletes y Mudanzas El Lince
+Transportes y Mudanzas Pantera
 </div>
 
 </div>
@@ -1367,7 +1367,7 @@ return `
     
     
 Beneficiario:
-Fletes y Mudanzas El Lince
+Transportes y Mudanzas Pantera
 
 CLABE:
 *<?= $clabe ?>*

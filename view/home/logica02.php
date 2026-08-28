@@ -5,7 +5,7 @@
 <script>
 async function obtenerFolio() {
     try {
-        const res = await fetch('https://control.mudanzasellince.com/view/home/getFolio.php');
+        const res = await fetch('/view/home/getFolio.php');
         const data = await res.json();
         return data.folio || 'F-00001';
     } catch (err) {
@@ -35,11 +35,11 @@ async function generarPDF() {
         doc.setFont("helvetica", "normal");
 
         const infoIzquierda = [
-            "RFC: RODV930126UI7",
-            "Teléfono: 5563285207",
-            "Dirección: Doctor Andrade 72 CP:06720",
-            "Correo: fletesymudanzasellince@gmail.com",
-            "mudanzasellince.com"
+            "RFC: CAMBIAR_RFC",
+            "Teléfono: CAMBIAR_TELEFONO",
+            "Dirección: CAMBIAR_DIRECCION",
+            "Correo: CAMBIAR_CORREO",
+            "app-pantera.onrender.com"
         ];
 
         const folio = await obtenerFolio();

@@ -84,7 +84,7 @@ try {
                                 " . ($logoBase64 ? "<img src='{$logoBase64}' style='width:70px; height:70px; object-fit:contain;'>" : "") . "
                             </td>
                             <td style='vertical-align:middle;'>
-                                <strong style='font-size:20px; color:#1a202c;'>Fletes y Mudanzas El Lince</strong><br>
+                                <strong style='font-size:20px; color:#1a202c;'>Transportes y Mudanzas Pantera</strong><br>
                                 <span style='color:#718096; font-size:13px; font-weight:600;'>Formato de Cotizacion</span>
                             </td>
                         </tr>
@@ -94,7 +94,7 @@ try {
                     <div style='margin-bottom:5px;'>
                         <strong style='color:#718096;'>Folio:</strong> <strong style='color:#FF0000; font-size:15px;'>{$folio}</strong>
                     </div>
-                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>RFC: RODV930126UI7<br>DOCTOR ANDRADE 72 CDMX, México<br>Tel: 55 6328 5207</div>
+                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>RFC: CAMBIAR_RFC<br>CAMBIAR_DIRECCION<br>Tel: CAMBIAR_TELEFONO</div>
                 </td>
             </tr>
         </table>
@@ -113,7 +113,7 @@ try {
 
         <table style='width:100%; border-collapse:collapse; margin-top:10px; margin-bottom:25px; font-size:15px; color:#1a202c;'>
             <tr>
-                <td style='text-align:left;'><strong>mudanzasellince.com</strong></td>
+                <td style='text-align:left;'><strong>app-pantera.onrender.com</strong></td>
                 <td style='text-align:right;'><strong>Total: \${$totalFmt}</strong></td>
             </tr>
         </table>

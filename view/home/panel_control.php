@@ -765,7 +765,7 @@ ob_end_flush();
 ><br>
 
             <div style="margin-left:10px;">
-    <strong style="font-size:18px;">Fletes y Mudanzas El Lince</strong><br>
+    <strong style="font-size:18px;">Transportes y Mudanzas Pantera</strong><br>
     <small>Formato de Cotizacion</small>
 </div>
         </div>
@@ -824,7 +824,7 @@ $hora  = date("h:i A");
    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:15px; font-size:18px;">
 
     <div>
-        <strong>mudanzasellince.com</strong>
+        <strong>app-pantera.onrender.com</strong>
     </div>
 
     <div>

@@ -68,7 +68,7 @@ $fecha_limite_pago = !empty($pago['fecha_limite_pago'])
 
 $concepto_pago = $pago['concepto'] ?? ("Servicio " . ($pago['cotizacion_id'] ?? ''));
 
-$contacto_correo = 'fletesymudanzasellince@gmail.com';
+$contacto_correo = 'CAMBIAR_CORREO';
 $contacto_tel    = '55 6328 5207';
 
 $status = $pago['status'] ?? 'pending';
@@ -587,7 +587,7 @@ html, body {
             <?php endif; ?>
 
             <div class="item-label">Beneficiario</div>
-            <div class="code-field">Fletes y Mudanzas El Lince</div>
+            <div class="code-field">Transportes y Mudanzas Pantera</div>
 
             <div class="item-label">CLABE Interbancaria</div>
             <div class="code-field"><?= htmlspecialchars($clabe) ?></div>

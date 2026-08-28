@@ -35,7 +35,7 @@
  *  - Por HTTP/curl (si no tienes SSH/cron con CLI): requiere el
  *    parámetro ?token=79aa959cf3122b274de9206eb26505c647e2a20d3e7aa994
  *    que coincida con el definido abajo, o responde 403 sin hacer nada.
- *      curl -s "https://control.mudanzasellince.com/view/home/sync_shipday_eliminados.php?token=79aa959cf3122b274de9206eb26505c647e2a20d3e7aa994"
+ *      curl -s "https://app-pantera.onrender.com/view/home/sync_shipday_eliminados.php?token=79aa959cf3122b274de9206eb26505c647e2a20d3e7aa994"
  *
  * *** Si por seguridad prefieres cambiar el token, edita la constante
  * *** SYNC_SHIPDAY_TOKEN más abajo por tu propio valor aleatorio.

@@ -54,7 +54,6 @@ if (session_status() === PHP_SESSION_NONE) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">    	 
 
 <!-- Scripts -->
-<script src="https://control.mudanzasellince.com/view/home/leaflet.fullscreen/Control.FullScreen.js"></script>
 
 
 <script src="https://kit.fontawesome.com/65ea5e46f1.js" crossorigin="anonymous"></script>

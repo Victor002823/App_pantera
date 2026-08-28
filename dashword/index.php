@@ -297,7 +297,7 @@ $mesActual = ucfirst($formatter->format($fecha));
                 <div class="sidebar-header" >
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a style="whidt 100px;" href="https://control.mudanzasellince.com/panel"><img src="assets/images/logo/logo.png" alt="" srcset="" ><h2>control/ellince.com</h2></a>
+                            <a style="whidt 100px;" href="/panel"><img src="assets/images/logo/logo.png" alt="" srcset="" ><h2>Pantera.TM</h2></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
