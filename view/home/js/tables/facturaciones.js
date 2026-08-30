@@ -1557,7 +1557,7 @@ function compilarPdfFacturasEnSegundoPlano(folio){
                     doc.autoTable({
                         head: [headersServicio],
                         body: rowServicio,
-                        startY: startY + 20 + infoIzquierda.length * lineHeight + 10,
+                        startY: startY + 20 + Math.max(infoIzquierda.length, infoDerecha.length) * lineHeight + 10,
                         styles: { fontSize: 10, cellPadding: 4 },
                         headStyles: { fillColor: [0,0,0], textColor: 255, fontStyle: 'bold', halign:'center' },
                         columnStyles: {
