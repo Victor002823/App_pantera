@@ -444,11 +444,11 @@ mb-4
 </p>
 
 <b
-class="fecha-servicio-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 ${admin ? 'cursor-pointer hover:bg-blue-50 hover:text-blue-800 focus:ring-2 focus:ring-blue-500/40 focus:bg-white' : ''}"
+class="fecha-servicio-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 cursor-pointer hover:bg-blue-50 hover:text-blue-800 focus:ring-2 focus:ring-blue-500/40 focus:bg-white"
 data-servicio-id="${f.servicio_id}"
 >${fechaServicio || '—'}</b>
 
-${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>` : ``}
+<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>
 
 </div>
 
@@ -462,16 +462,16 @@ ${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[1
 </p>
 
 <b
-class="hora-servicio-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 ${admin ? 'cursor-pointer hover:bg-blue-50 hover:text-blue-800 focus:ring-2 focus:ring-blue-500/40 focus:bg-white' : ''}"
+class="hora-servicio-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 cursor-pointer hover:bg-blue-50 hover:text-blue-800 focus:ring-2 focus:ring-blue-500/40 focus:bg-white"
 data-servicio-id="${f.servicio_id}"
 >${horaServicio || '—'}</b>
 
-${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>` : ``}
+<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>
 
 </div>
 
 
-<div class="group relative bg-slate-50 ${admin ? 'hover:bg-slate-100' : ''} border border-slate-200 p-3 rounded-xl transition-colors duration-150">
+<div class="group relative bg-slate-50 hover:bg-slate-100 border border-slate-200 p-3 rounded-xl transition-colors duration-150">
 
 <p class="text-[11px] font-semibold uppercase tracking-wide text-slate-400 flex items-center gap-1">
     <span class="material-symbols-outlined text-[14px] leading-none">payments</span>
@@ -479,17 +479,17 @@ ${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[1
 </p>
 
 <b
-class="anticipo-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 ${admin ? 'cursor-text hover:bg-blue-50 focus:ring-2 focus:ring-blue-500/40 focus:bg-white' : 'text-slate-500'}"
+class="anticipo-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 cursor-text hover:bg-blue-50 focus:ring-2 focus:ring-blue-500/40 focus:bg-white"
 data-servicio-id="${f.servicio_id}"
-${admin ? 'contenteditable="true"' : 'contenteditable="false"'}
+contenteditable="true"
 >${Number(f.anticipo ?? 0)}</b>
 
-${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>` : ``}
+<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>
 
 </div>
 
 
-<div class="group relative bg-slate-50 ${admin ? 'hover:bg-slate-100' : ''} border border-slate-200 p-3 rounded-xl transition-colors duration-150">
+<div class="group relative bg-slate-50 hover:bg-slate-100 border border-slate-200 p-3 rounded-xl transition-colors duration-150">
 
 <p class="text-[11px] font-semibold uppercase tracking-wide text-slate-400 flex items-center gap-1">
     <span class="material-symbols-outlined text-[14px] leading-none">percent</span>
@@ -497,19 +497,19 @@ ${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[1
 </p>
 
 <b
-class="iva-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 ${admin ? 'cursor-text hover:bg-blue-50 focus:ring-2 focus:ring-blue-500/40 focus:bg-white' : 'text-slate-500'}"
+class="iva-editable block mt-1 text-sm font-bold text-slate-800 rounded-lg px-2 py-1 -mx-2 outline-none transition-all duration-150 cursor-text hover:bg-blue-50 focus:ring-2 focus:ring-blue-500/40 focus:bg-white"
 data-servicio-id="${f.servicio_id}"
-${admin ? 'contenteditable="true"' : 'contenteditable="false"'}
+contenteditable="true"
 >${Number(f.iva ?? 0)}</b>
 
-${admin ? `<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>` : ``}
+<span class="material-symbols-outlined absolute top-3 right-3 text-[15px] text-slate-300 group-hover:text-blue-600 transition-colors pointer-events-none">edit</span>
 
 </div>
 
 
 </div>
 
-${admin ? `<p class="text-[11px] text-slate-400 flex items-center gap-1 -mt-2 mb-4"><span class="material-symbols-outlined text-[13px]">info</span>Toca un campo para editarlo</p>` : ``}
+<p class="text-[11px] text-slate-400 flex items-center gap-1 -mt-2 mb-4"><span class="material-symbols-outlined text-[13px]">info</span>Toca un campo para editarlo</p>
 
 
 
@@ -979,7 +979,7 @@ document.addEventListener('click', function(e){
 
     const celdaFecha = e.target.closest('.fecha-servicio-editable');
 
-    if(celdaFecha && esAdmin() && typeof flatpickr !== 'undefined'){
+    if(celdaFecha && typeof flatpickr !== 'undefined'){
 
         if(celdaFecha.querySelector('input')) return;
 
@@ -1009,7 +1009,7 @@ document.addEventListener('click', function(e){
 
     const celdaHora = e.target.closest('.hora-servicio-editable');
 
-    if(celdaHora && esAdmin() && typeof flatpickr !== 'undefined'){
+    if(celdaHora && typeof flatpickr !== 'undefined'){
 
         if(celdaHora.querySelector('input')) return;
 
