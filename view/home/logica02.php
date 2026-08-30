@@ -22,8 +22,8 @@ async function generarPDF() {
     logo.src = "/view/home/logo1023.png";
 
     logo.onload = async function() {
-        const logoWidth = 300;
-        const logoHeight = 100;
+        const logoWidth = 80;
+        const logoHeight = 80;
         doc.addImage(logo, 'PNG', 10, 30, logoWidth, logoHeight);
 
         const hoy = new Date();
@@ -117,8 +117,8 @@ async function generarPDF() {
         // Segunda hoja: Términos y condiciones
         doc.addPage();
         const pageWidth = doc.internal.pageSize.getWidth();
-        const logoWidth2 = 200;
-        const logoHeight2 = 70;
+        const logoWidth2 = 90;
+        const logoHeight2 = 90;
         const xLogo2 = (pageWidth - logoWidth2) / 1.8;
         const yLogo2 = 60;
         doc.addImage(logo, "PNG", xLogo2, yLogo2, logoWidth2, logoHeight2);
