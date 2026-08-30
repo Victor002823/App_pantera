@@ -559,6 +559,10 @@ ob_end_flush();
     Local
   </label>
   <label>
+    <input type="radio" name="destino" value="Metropolitano" onchange="activarModo(this.value)">
+    Metropolitano
+  </label>
+  <label>
     <input type="radio" name="destino" value="Foráneo" onchange="activarModo(this.value)">
     Foráneo
   </label>

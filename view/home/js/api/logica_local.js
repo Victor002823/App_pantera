@@ -285,6 +285,8 @@ function activarModo(modo) {
 function updateResults() {
   if (servicio === "local") {
     updateResultsLocal();
+  } else if (servicio === "metropolitano") {
+    updateResultsMetropolitano();
   } else if (servicio === "foraneo") {
     updateResultsForaneo();
   } else {
@@ -299,14 +301,32 @@ function updateResultsLocal() {
   mostrarTarjetas();
 
   if (mode === 'flete') {
-    camionetaCosts[700] = (18 * distance + 400);
-    camionetaCosts[1500] = (27 * distance + 800);
+    camionetaCosts[700] = (12 * distance + 300);
+    camionetaCosts[1500] = (18 * distance + 450);
   } else { // mudanza
-    camionetaCosts[700] = (21 * distance + 500);
-    camionetaCosts[1500] = (27 * distance + 1200);
+    camionetaCosts[700] = (15 * distance + 350);
+    camionetaCosts[1500] = (21 * distance + 650);
   }
 
-  camionetaCosts[3500] = ((distance / 6) * 26 + 2500) * 2 + 500;
+  camionetaCosts[3500] = ((distance / 6) * 28 + 2500) * 2 + 500;
+  mostrarResultados();
+}
+
+// ---- LÓGICA METROPOLITANO ----
+function updateResultsMetropolitano() {
+  console.log("✅ Ejecutando lógica METROPOLITANO");
+
+  mostrarTarjetas();
+
+  if (mode === 'flete') {
+    camionetaCosts[700] = (15 * distance + 350);
+    camionetaCosts[1500] = (18 * distance + 450);
+  } else { // mudanza
+    camionetaCosts[700] = (18 * distance + 400);
+    camionetaCosts[1500] = (25 * distance + 850);
+  }
+
+  camionetaCosts[3500] = ((distance / 6) * 28 + 2500) * 2 + 500;
   mostrarResultados();
 }
 
