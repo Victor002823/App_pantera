@@ -24,7 +24,7 @@ async function generarPDF() {
     logo.onload = async function() {
         const logoWidth = 80;
         const logoHeight = 80;
-        doc.addImage(logo, 'PNG', 10, 30, logoWidth, logoHeight);
+        doc.addImage(logo, 'PNG', 40, 30, logoWidth, logoHeight);
 
         const hoy = new Date();
         const fechaActual = `${String(hoy.getDate()).padStart(2,'0')}/${String(hoy.getMonth()+1).padStart(2,'0')}/${hoy.getFullYear()} ${String(hoy.getHours()).padStart(2,'0')}:${String(hoy.getMinutes()).padStart(2,'0')}`;

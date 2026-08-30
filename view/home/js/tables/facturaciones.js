@@ -1507,7 +1507,7 @@ function compilarPdfFacturasEnSegundoPlano(folio){
             logo.onload = async function() {
                 const logoWidth = 80;
                 const logoHeight = 80;
-                doc.addImage(logo, 'PNG', 10, 30, logoWidth, logoHeight);
+                doc.addImage(logo, 'PNG', 40, 30, logoWidth, logoHeight);
 
                 // Aquí usamos la fecha de creación del documento
                 const fechaActual = window.currentDocDataFacturas.fechaCreacionFull;
