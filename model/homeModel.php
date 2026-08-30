@@ -20,7 +20,7 @@ class homeModel{
         }
 
         // Insertar nuevo usuario
-        $statement = $this->PDO->prepare("INSERT INTO usuarios (id, correo, password, nombre_usuario) VALUES (null, :correo, :password, :nombre_usuario)");
+        $statement = $this->PDO->prepare("INSERT INTO usuarios (correo, password, nombre_usuario) VALUES (:correo, :password, :nombre_usuario)");
         $statement->bindParam(":correo", $correo);
         $statement->bindParam(":password", $password);
         $statement->bindParam(":nombre_usuario", $nombre_usuario);
