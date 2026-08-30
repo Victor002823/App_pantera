@@ -605,7 +605,6 @@ ${total}
 </div>
 
 
-${admin ? `
 <button
     class="btnGuardarServicio w-full mt-3 min-h-[48px] rounded-2xl bg-blue-800 text-white font-bold text-sm
         flex items-center justify-center gap-2
@@ -617,7 +616,6 @@ ${admin ? `
     <span class="material-symbols-outlined text-lg">save</span>
     Guardar cambios de este servicio
 </button>
-` : ``}
 
 <button
     class="btnAgregarPDFServicio w-full mt-2 min-h-[48px] rounded-2xl bg-slate-900 text-white font-bold text-sm
@@ -847,11 +845,6 @@ document.addEventListener('click', async (e)=>{
     const btn = e.target.closest('.btnGuardarServicio');
 
     if(!btn) return;
-
-    if(!esAdmin()){
-        avisar('Sin permiso', 'No tienes permiso para guardar', 'error');
-        return;
-    }
 
     const servicioId = btn.dataset.servicioId;
 
