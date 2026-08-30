@@ -240,10 +240,13 @@ async function generarPDF() {
   // Encabezado
   const encabezadoY = 30;
 doc.setFontSize(12);
-doc.text("RFC: CEFL950210513", 15, encabezadoY);
-doc.text("Teléfono: 5540662626", 15, encabezadoY + 5);
-doc.text("Dirección: Jose Ceballos 60", 15, encabezadoY + 10);
-doc.text("Correo: transportesymudanzaspantera@gmail.com", 15, encabezadoY + 20);
+const esAdminPDF = typeof rolUsuario !== 'undefined' && rolUsuario && rolUsuario.trim().toLowerCase() === 'admin';
+if (esAdminPDF) {
+    doc.text("RFC: CEFL950210513", 15, encabezadoY);
+    doc.text("Teléfono: 5540662626", 15, encabezadoY + 5);
+    doc.text("Dirección: Jose Ceballos 60", 15, encabezadoY + 10);
+}
+doc.text("Correo: transportesymudanzaspantera@gmail.com", 15, encabezadoY + (esAdminPDF ? 20 : 5));
 
 doc.setFontSize(12);
 doc.text(`Asesor: ${asesor}`, 150, encabezadoY);

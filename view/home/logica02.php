@@ -35,9 +35,11 @@ async function generarPDF() {
         doc.setFont("helvetica", "normal");
 
         const infoIzquierda = [
+            <?php if (($_SESSION['rol'] ?? '') === 'admin'): ?>
             "RFC: CEFL950210513",
             "Teléfono: 5540662626",
             "Dirección: Jose Ceballos 60",
+            <?php endif; ?>
             "Correo: transportesymudanzaspantera@gmail.com"
         ];
 

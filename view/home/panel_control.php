@@ -790,9 +790,11 @@ $hora  = date("h:i A");
     <div class="empresa-info">
         <strong>Fecha:</strong> <?php echo $fecha; ?><br>
         <strong>Hora:</strong> <?php echo $hora; ?><br>
+        <?php if (($_SESSION['rol'] ?? '') === 'admin'): ?>
         RFC: CEFL950210513<br>
         Jose Ceballos 60<br>
         Tel: 5540662626<br>
+        <?php endif; ?>
     </div>
           
 

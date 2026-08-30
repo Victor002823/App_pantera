@@ -1142,11 +1142,13 @@ RFC
 
 <td>
 
+<?php if (($_SESSION['rol'] ?? '') === 'admin'): ?>
 <?= htmlspecialchars(
 $pago['rfc']
 ??
 'CEFL950210513'
 ) ?>
+<?php endif; ?>
 
 </td>
 

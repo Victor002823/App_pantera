@@ -205,7 +205,7 @@ foreach ($bancos_spei as &$banco) {
 }
 unset($banco);
 
-$razon_social = $pago['razon_social'] ?? 'VICTOR IVAN ROJAS DURAN';
+$razon_social = $pago['razon_social'] ?? 'Laura Alejandra Cedillo Flores';
 $rfc          = $pago['rfc'] ?? 'CEFL950210513';
 $regimen      = $pago['regimen'] ?? 'Persona Fisica con Actividad Empresarial';
 
@@ -697,13 +697,14 @@ html, body {
 
     <hr class="divider-dashed">
 
-    <!-- DATOS FISCALES -->
+    <?php if (($_SESSION['rol'] ?? '') === 'admin'): ?>
     <div class="section-title">Datos Fiscales</div>
     <div class="fiscal-box">
         <div><strong>Razón Social:</strong> <?= htmlspecialchars($razon_social) ?></div>
         <div><strong>RFC:</strong> <?= htmlspecialchars($rfc) ?></div>
         <div><strong>Régimen:</strong> <?= htmlspecialchars($regimen) ?></div>
     </div>
+    <?php endif; ?>
 
     <!-- PIE DE PÁGINA -->
     <div class="ticket-footer">

@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 header('Content-Type: application/json; charset=utf-8');
 
@@ -94,7 +97,7 @@ try {
                     <div style='margin-bottom:5px;'>
                         <strong style='color:#718096;'>Folio:</strong> <strong style='color:#FF0000; font-size:15px;'>{$folio}</strong>
                     </div>
-                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>RFC: CEFL950210513<br>Jose Ceballos 60<br>Tel: 5540662626</div>
+                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>" . (($_SESSION['rol'] ?? '') === 'admin' ? 'RFC: CEFL950210513<br>Jose Ceballos 60<br>Tel: 5540662626' : '') . "</div>
                 </td>
             </tr>
         </table>
