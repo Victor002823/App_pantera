@@ -35,10 +35,10 @@ async function generarPDF() {
         doc.setFont("helvetica", "normal");
 
         const infoIzquierda = [
-            "RFC: CAMBIAR_RFC",
-            "Teléfono: CAMBIAR_TELEFONO",
-            "Dirección: CAMBIAR_DIRECCION",
-            "Correo: CAMBIAR_CORREO"
+            "RFC: CEFL950210513",
+            "Teléfono: 5540662626",
+            "Dirección: Jose Ceballos 60",
+            "Correo: transportesymudanzaspantera@gmail.com"
         ];
 
         const folio = await obtenerFolio();

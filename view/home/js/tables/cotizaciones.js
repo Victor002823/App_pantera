@@ -615,7 +615,7 @@ function construirTemplateHTML(folio, fecha, hora, carrito, totalGeneral) {
                 <div style="margin-bottom: 5px;">
                     <strong style="color:#718096;">Folio:</strong> <strong style="color: #FF0000; font-size: 15px;">${folio}</strong>
                 </div>
-                <div><strong>Fecha:</strong> ${fecha}<br><strong>Hora:</strong> ${hora}<br>RFC: CAMBIAR_RFC<br>CAMBIAR_DIRECCION<br>Tel: CAMBIAR_TELEFONO</div>
+                <div><strong>Fecha:</strong> ${fecha}<br><strong>Hora:</strong> ${hora}<br>RFC: CEFL950210513<br>Jose Ceballos 60<br>Tel: 5540662626</div>
             </div>
         </div>
         <table style="width:100%; border-collapse: separate; border-spacing: 0; border: 2px solid #1400AD; border-radius: 12px; overflow: hidden; font-family: sans-serif; margin-bottom: 5px;">

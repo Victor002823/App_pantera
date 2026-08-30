@@ -68,8 +68,8 @@ $fecha_limite_pago = !empty($pago['fecha_limite_pago'])
 
 $concepto_pago = $pago['concepto'] ?? ("Servicio " . ($pago['cotizacion_id'] ?? ''));
 
-$contacto_correo = 'CAMBIAR_CORREO';
-$contacto_tel    = 'CAMBIAR_TELEFONO';
+$contacto_correo = 'transportesymudanzaspantera@gmail.com';
+$contacto_tel    = '5540662626';
 
 $status = $pago['status'] ?? 'pending';
 $status_map = [
@@ -206,7 +206,7 @@ foreach ($bancos_spei as &$banco) {
 unset($banco);
 
 $razon_social = $pago['razon_social'] ?? 'VICTOR IVAN ROJAS DURAN';
-$rfc          = $pago['rfc'] ?? 'CAMBIAR_RFC';
+$rfc          = $pago['rfc'] ?? 'CEFL950210513';
 $regimen      = $pago['regimen'] ?? 'Persona Fisica con Actividad Empresarial';
 
 ?>

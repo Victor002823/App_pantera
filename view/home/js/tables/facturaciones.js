@@ -1356,10 +1356,10 @@ function renderPreviewHTMLFacturas(){
             <div>
                 <img src="/view/home/logo1023.png" alt="Logo" style="max-width:220px;">
                 <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-                    RFC: CAMBIAR_RFC<br>
-                    Teléfono: CAMBIAR_TELEFONO<br>
-                    Dirección: CAMBIAR_DIRECCION<br>
-                    Correo: CAMBIAR_CORREO<br>
+                    RFC: CEFL950210513<br>
+                    Teléfono: 5540662626<br>
+                    Dirección: Jose Ceballos 60<br>
+                    Correo: transportesymudanzaspantera@gmail.com<br>
                 </p>
             </div>
             <div class="text-right text-xs text-slate-500 leading-relaxed">
@@ -1532,10 +1532,10 @@ function compilarPdfFacturasEnSegundoPlano(folio){
                 doc.setFont("helvetica", "normal");
 
                 const infoIzquierda = [
-                    "RFC: CAMBIAR_RFC",
-                    "Teléfono: CAMBIAR_TELEFONO",
-                    "Dirección: CAMBIAR_DIRECCION",
-                    "Correo: CAMBIAR_CORREO",
+                    "RFC: CEFL950210513",
+                    "Teléfono: 5540662626",
+                    "Dirección: Jose Ceballos 60",
+                    "Correo: transportesymudanzaspantera@gmail.com",
                 ];
 
                 const infoDerecha = [

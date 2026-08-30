@@ -94,7 +94,7 @@ try {
                     <div style='margin-bottom:5px;'>
                         <strong style='color:#718096;'>Folio:</strong> <strong style='color:#FF0000; font-size:15px;'>{$folio}</strong>
                     </div>
-                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>RFC: CAMBIAR_RFC<br>CAMBIAR_DIRECCION<br>Tel: CAMBIAR_TELEFONO</div>
+                    <div><strong>Fecha:</strong> {$fechaMX}<br><strong>Hora:</strong> {$horaMX}<br>RFC: CEFL950210513<br>Jose Ceballos 60<br>Tel: 5540662626</div>
                 </td>
             </tr>
         </table>

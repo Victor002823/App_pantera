@@ -790,9 +790,9 @@ $hora  = date("h:i A");
     <div class="empresa-info">
         <strong>Fecha:</strong> <?php echo $fecha; ?><br>
         <strong>Hora:</strong> <?php echo $hora; ?><br>
-        RFC: CAMBIAR_RFC<br>
-        CAMBIAR_DIRECCION<br>
-        Tel: CAMBIAR_TELEFONO<br>
+        RFC: CEFL950210513<br>
+        Jose Ceballos 60<br>
+        Tel: 5540662626<br>
     </div>
           
 
