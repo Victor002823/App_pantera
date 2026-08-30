@@ -113,7 +113,7 @@ try {
 
         <table style='width:100%; border-collapse:collapse; margin-top:10px; margin-bottom:25px; font-size:15px; color:#1a202c;'>
             <tr>
-                <td style='text-align:left;'><strong>app-pantera.onrender.com</strong></td>
+                <td style='text-align:left;'></td>
                 <td style='text-align:right;'><strong>Total: \${$totalFmt}</strong></td>
             </tr>
         </table>

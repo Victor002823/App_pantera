@@ -615,7 +615,7 @@ function construirTemplateHTML(folio, fecha, hora, carrito, totalGeneral) {
                 <div style="margin-bottom: 5px;">
                     <strong style="color:#718096;">Folio:</strong> <strong style="color: #FF0000; font-size: 15px;">${folio}</strong>
                 </div>
-                <div><strong>Fecha:</strong> ${fecha}<br><strong>Hora:</strong> ${hora}<br>RFC: RODV930126UI7<br>DOCTOR ANDRADE 72 CDMX, México<br>Tel: 55 6328 5207</div>
+                <div><strong>Fecha:</strong> ${fecha}<br><strong>Hora:</strong> ${hora}<br>RFC: CAMBIAR_RFC<br>CAMBIAR_DIRECCION<br>Tel: CAMBIAR_TELEFONO</div>
             </div>
         </div>
         <table style="width:100%; border-collapse: separate; border-spacing: 0; border: 2px solid #1400AD; border-radius: 12px; overflow: hidden; font-family: sans-serif; margin-bottom: 5px;">
@@ -630,7 +630,7 @@ function construirTemplateHTML(folio, fecha, hora, carrito, totalGeneral) {
             <tbody style="background: white;">${tablaFilasHTML}${filasRelleno}</tbody>
         </table>
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; margin-bottom: 25px; font-size:15px; font-family: sans-serif; color: #1a202c;">
-            <div><strong>app-pantera.onrender.com</strong></div>
+            <div></div>
             <div><strong>Total: $<span>${totalGeneral.toLocaleString('es-MX', {minimumFractionDigits: 2})}</span></strong></div>
         </div>
         <div style="margin-top:20px;">

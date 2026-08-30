@@ -240,10 +240,9 @@ async function generarPDF() {
   // Encabezado
   const encabezadoY = 30;
 doc.setFontSize(12);
-doc.text("RFC: RODV930126UI7", 15, encabezadoY);
-doc.text("Teléfono: 5563285207", 15, encabezadoY + 5);
-doc.text("Dirección: Doctor Andrade 72 CP:06720", 15, encabezadoY + 10);
-doc.text("app-pantera.onrender.com", 15, encabezadoY + 15);
+doc.text("RFC: CAMBIAR_RFC", 15, encabezadoY);
+doc.text("Teléfono: CAMBIAR_TELEFONO", 15, encabezadoY + 5);
+doc.text("Dirección: CAMBIAR_DIRECCION", 15, encabezadoY + 10);
 doc.text("Correo: CAMBIAR_CORREO", 15, encabezadoY + 20);
 
 doc.setFontSize(12);

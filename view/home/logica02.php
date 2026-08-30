@@ -38,8 +38,7 @@ async function generarPDF() {
             "RFC: CAMBIAR_RFC",
             "Teléfono: CAMBIAR_TELEFONO",
             "Dirección: CAMBIAR_DIRECCION",
-            "Correo: CAMBIAR_CORREO",
-            "app-pantera.onrender.com"
+            "Correo: CAMBIAR_CORREO"
         ];
 
         const folio = await obtenerFolio();

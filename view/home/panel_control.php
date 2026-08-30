@@ -790,9 +790,9 @@ $hora  = date("h:i A");
     <div class="empresa-info">
         <strong>Fecha:</strong> <?php echo $fecha; ?><br>
         <strong>Hora:</strong> <?php echo $hora; ?><br>
-        RFC: RODV930126UI7<br>
-        DOCTOR ANDRADE 72 CDMX, México<br>
-        Tel: 55 6328 5207<br>
+        RFC: CAMBIAR_RFC<br>
+        CAMBIAR_DIRECCION<br>
+        Tel: CAMBIAR_TELEFONO<br>
     </div>
           
 
@@ -824,7 +824,7 @@ $hora  = date("h:i A");
    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:15px; font-size:18px;">
 
     <div>
-        <strong>app-pantera.onrender.com</strong>
+        <strong></strong>
     </div>
 
     <div>

@@ -69,7 +69,7 @@ $fecha_limite_pago = !empty($pago['fecha_limite_pago'])
 $concepto_pago = $pago['concepto'] ?? ("Servicio " . ($pago['cotizacion_id'] ?? ''));
 
 $contacto_correo = 'CAMBIAR_CORREO';
-$contacto_tel    = '55 6328 5207';
+$contacto_tel    = 'CAMBIAR_TELEFONO';
 
 $status = $pago['status'] ?? 'pending';
 $status_map = [
@@ -206,7 +206,7 @@ foreach ($bancos_spei as &$banco) {
 unset($banco);
 
 $razon_social = $pago['razon_social'] ?? 'VICTOR IVAN ROJAS DURAN';
-$rfc          = $pago['rfc'] ?? 'RODV930126UI7';
+$rfc          = $pago['rfc'] ?? 'CAMBIAR_RFC';
 $regimen      = $pago['regimen'] ?? 'Persona Fisica con Actividad Empresarial';
 
 ?>

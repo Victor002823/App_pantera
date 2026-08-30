@@ -1356,11 +1356,10 @@ function renderPreviewHTMLFacturas(){
             <div>
                 <img src="/view/home/logo1023.png" alt="Logo" style="max-width:220px;">
                 <p class="text-xs text-slate-500 mt-2 leading-relaxed">
-                    RFC: RODV930126UI7<br>
-                    Teléfono: 5563285207<br>
-                    Dirección: Doctor Andrade 72 CP:06720<br>
+                    RFC: CAMBIAR_RFC<br>
+                    Teléfono: CAMBIAR_TELEFONO<br>
+                    Dirección: CAMBIAR_DIRECCION<br>
                     Correo: CAMBIAR_CORREO<br>
-                    app-pantera.onrender.com
                 </p>
             </div>
             <div class="text-right text-xs text-slate-500 leading-relaxed">
@@ -1533,11 +1532,10 @@ function compilarPdfFacturasEnSegundoPlano(folio){
                 doc.setFont("helvetica", "normal");
 
                 const infoIzquierda = [
-                    "RFC: RODV930126UI7",
-                    "Teléfono: 5563285207",
-                    "Dirección: Doctor Andrade 72 CP:06720",
+                    "RFC: CAMBIAR_RFC",
+                    "Teléfono: CAMBIAR_TELEFONO",
+                    "Dirección: CAMBIAR_DIRECCION",
                     "Correo: CAMBIAR_CORREO",
-                    "app-pantera.onrender.com"
                 ];
 
                 const infoDerecha = [
