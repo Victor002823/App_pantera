@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     libicu-dev \
     unzip \
     curl \
+    cron \
     gnupg \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo pdo_pgsql pgsql mysqli zip gd intl \
