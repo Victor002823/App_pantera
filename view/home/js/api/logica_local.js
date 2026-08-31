@@ -320,7 +320,7 @@ function updateResultsMetropolitano() {
 
   if (mode === 'flete') {
     camionetaCosts[700] = (15 * distance + 350);
-    camionetaCosts[1500] = (18 * distance + 450);
+    camionetaCosts[1500] = (21 * distance + 700);
   } else { // mudanza
     camionetaCosts[700] = (18 * distance + 400);
     camionetaCosts[1500] = (25 * distance + 850);
