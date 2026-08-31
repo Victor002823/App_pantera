@@ -64,7 +64,7 @@ ob_end_flush();
 
     <div class="input-group hidden" id="input1-group" style="display:flex; align-items:center; gap:8px; background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:8px 12px;">
         <span style="width:20px; height:20px; background-color:#e2e8f0; color:#475569; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; flex-shrink:0;">•</span>
-        <input class="address-input" type="text" value="19.4228676, -99.1451204" id="input1" placeholder="Dirección inicial" style="flex:1; background:transparent; border:0; outline:none; font-size:14px; color:#334155;">
+        <input class="address-input" type="text" value="19.8345049, -99.0756870" id="input1" placeholder="Dirección inicial" style="flex:1; background:transparent; border:0; outline:none; font-size:14px; color:#334155;">
         <button class="clear-btn" type="button" onclick="clearInput('input1')" style="background:none; border:0; color:#94a3b8; padding:4px; cursor:pointer; flex-shrink:0;">
             <i class="fa fa-times" style="font-size:12px;" aria-hidden="true"></i>
         </button>
@@ -84,7 +84,7 @@ ob_end_flush();
 
     <div class="input-group hidden" id="input4-group" style="display:flex; align-items:center; gap:8px; background-color:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:8px 12px;">
         <span style="width:20px; height:20px; background-color:#e2e8f0; color:#475569; border-radius:9999px; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; flex-shrink:0;">•</span>
-        <input class="address-input end" type="text" value="19.4228676, -99.1451204" id="input4" placeholder="Dirección final" style="flex:1; background:transparent; border:0; outline:none; font-size:14px; color:#334155;">
+        <input class="address-input end" type="text" value="19.8345049, -99.0756870" id="input4" placeholder="Dirección final" style="flex:1; background:transparent; border:0; outline:none; font-size:14px; color:#334155;">
         <button class="clear-btn" type="button" onclick="clearInput('input4')" style="background:none; border:0; color:#94a3b8; padding:4px; cursor:pointer; flex-shrink:0;">
             <i class="fa fa-times" style="font-size:12px;" aria-hidden="true"></i>
         </button>
