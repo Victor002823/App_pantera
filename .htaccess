@@ -45,6 +45,12 @@ RewriteRule ^panel/?$ view/home/panel_control.php [L,QSA]
 RewriteRule ^form/?$ view/home/form.html [L,QSA]
 
 # =========================
+# PROXY A GALERIA-API (Node.js interno en :3000)
+# =========================
+RewriteCond %{REQUEST_URI} ^/galeria-api/
+RewriteRule ^galeria-api/(.*)$ http://127.0.0.1:3000/$1 [P,L]
+
+# =========================
 # NO REESCRIBIR ARCHIVOS REALES
 # =========================
 RewriteCond %{REQUEST_FILENAME} -f
