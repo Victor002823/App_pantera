@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Transportes y Mudanzas Pantera</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    animation: pulso 1.6s ease-in-out infinite;
+  }
+  @keyframes pulso {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.94); }
+  }
+  .barra-contenedor {
+    width: 180px;
+    height: 4px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .barra {
+    height: 100%;
+    width: 40%;
+    background: #ffffff;
+    border-radius: 4px;
+    animation: deslizar 1.2s ease-in-out infinite;
+  }
+  @keyframes deslizar {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+  }
+  .texto {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+  <div class="contenedor">
+    <img class="logo" src="/icon-512.png" alt="Pantera">
+    <div class="barra-contenedor"><div class="barra"></div></div>
+    <div class="texto" id="texto-estado">Iniciando...</div>
+  </div>
+
+  <script>
+    const destino = new URLSearchParams(location.search).get('destino') || '/panel';
+    const textoEl = document.getElementById('texto-estado');
+    const mensajes = ['Iniciando...', 'Despertando el servidor...', 'Casi listo...'];
+    let intento = 0;
+
+    function actualizarTexto() {
+      const idx = Math.min(Math.floor(intento / 3), mensajes.length - 1);
+      textoEl.textContent = mensajes[idx];
+    }
+
+    async function intentarConectar() {
+      intento++;
+      actualizarTexto();
+      try {
+        const res = await fetch(destino, { method: 'HEAD', cache: 'no-store' });
+        if (res.ok || res.status < 500) {
+          window.location.replace(destino);
+          return;
+        }
+      } catch (e) {
+        // servidor aun dormido, reintentar
+      }
+      setTimeout(intentarConectar, 2000);
+    }
+
+    intentarConectar();
+  </script>
+</body>
+</html>

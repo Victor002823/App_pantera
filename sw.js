@@ -1,8 +1,9 @@
-const CACHE_NAME = 'pantera-v1';
+const CACHE_NAME = 'pantera-v2';
 const ASSETS_ESENCIALES = [
   '/manifest.json',
   '/icon-192.png',
-  '/icon-512.png'
+  '/icon-512.png',
+  '/loading.html'
 ];
 
 self.addEventListener('install', (e) => {
@@ -25,11 +26,35 @@ self.addEventListener('activate', (e) => {
   self.clients.claim();
 });
 
-// Estrategia: red primero, caché como respaldo (para no servir datos
-// desactualizados de cotizaciones/pagos, pero seguir funcionando si
-// se pierde la conexión momentáneamente).
+// Para navegaciones (abrir la app / cambiar de pagina): si el servidor
+// no responde rapido (por ejemplo, esta "dormido" en el plan gratis de
+// Render), se muestra al instante la pantalla de carga con spinner en
+// vez de dejar la pantalla en blanco/negra sin explicacion.
+const TIMEOUT_MS = 2500;
+
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
+
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      Promise.race([
+        fetch(e.request),
+        new Promise((resolve) => {
+          setTimeout(() => resolve(null), TIMEOUT_MS);
+        })
+      ]).then((respuesta) => {
+        if (respuesta) return respuesta;
+        const destino = new URL(e.request.url).pathname;
+        return caches.match('/loading.html').then((cacheada) => {
+          if (cacheada) return cacheada;
+          return fetch('/loading.html?destino=' + encodeURIComponent(destino));
+        });
+      }).catch(() => {
+        return caches.match('/loading.html');
+      })
+    );
+    return;
+  }
 
   e.respondWith(
     fetch(e.request)
