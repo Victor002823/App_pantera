@@ -65,6 +65,7 @@
     <span id="nombreUsuario">Asesor</span>
     <i class="fa-solid fa-location-dot" id="markerIcon" style="display:none; color:red;"></i>
 </h1>
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
 <script src="/view/home/funciones_login.js"></script>
 
 </body>
