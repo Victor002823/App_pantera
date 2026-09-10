@@ -5,11 +5,10 @@ set -e
 cd /var/www/html/galeria-api
 node server.js &
 
-# Genera el crontab de keepalive con la URL real que Render asigna en runtime
-KEEPALIVE_URL=${RENDER_EXTERNAL_URL:-http://127.0.0.1}
+# Genera el crontab de keepalive con la URL publica fija (RENDER_EXTERNAL_URL no llega seteada en este servicio)
+KEEPALIVE_URL="https://app-pantera.onrender.com"
 mkdir -p /etc/cron.d
-echo "*/10 * * * * curl -s -o /dev/null $KEEPALIVE_URL/ >> /var/log/keepalive.log 2>&1" > /etc/cron.d/keepalive
-echo "" >> /etc/cron.d/keepalive
+echo "*/10 * * * * root curl -s -o /dev/null $KEEPALIVE_URL/ >> /var/log/keepalive.log 2>&1" > /etc/cron.d/keepalive
 chmod 0644 /etc/cron.d/keepalive
 crontab /etc/cron.d/keepalive
 
