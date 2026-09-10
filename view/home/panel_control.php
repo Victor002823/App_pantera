@@ -1059,7 +1059,9 @@ async function guardarHuellaDirecto(correo) {
                     ],
                     authenticatorSelection: {
                         authenticatorAttachment: 'platform',
-                        userVerification: 'required'
+                        userVerification: 'required',
+                        residentKey: 'required',
+                        requireResidentKey: true
                     },
                     timeout: 60000,
                     attestation: 'none'
