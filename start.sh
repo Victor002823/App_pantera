@@ -11,6 +11,8 @@ mkdir -p /etc/cron.d
 echo "*/10 * * * * root curl -s -o /dev/null $KEEPALIVE_URL/ >> /var/log/keepalive.log 2>&1" > /etc/cron.d/keepalive
 chmod 0644 /etc/cron.d/keepalive
 crontab /etc/cron.d/keepalive
+echo "* * * * * root curl -s -o /dev/null ${KEEPALIVE_URL}/view/home/cron_notificaciones.php?token=${CRON_NOTIF_TOKEN} >> /var/log/cron_notif.log 2>&1" >> /etc/cron.d/keepalive
+crontab /etc/cron.d/keepalive
 
 # Arranca cron en segundo plano (keepalive)
 cron

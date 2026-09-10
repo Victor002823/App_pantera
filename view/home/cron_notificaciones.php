@@ -9,7 +9,7 @@ ini_set('display_errors', 0); // nunca mostrar errores en pantalla en producció
 
 // 🔐 Token de acceso — solo quien conozca este valor puede disparar el cron.
 // ⚠️ Cambia este valor: el que traías quedó expuesto en el chat de soporte.
-define('CRON_TOKEN', '0b6f3879a3666b344f6618705d2df632c15730c86274dc6aac6d5838cef362ec');
+define('CRON_TOKEN', getenv('CRON_NOTIF_TOKEN') ?: '');
 
 $tokenRecibido = $_GET['token'] ?? '';
 if (!hash_equals(CRON_TOKEN, $tokenRecibido)) {
@@ -21,7 +21,7 @@ if (!hash_equals(CRON_TOKEN, $tokenRecibido)) {
 require_once(__DIR__ . "/../../config/db.php");
 
 // URL de tu API en Render
-define('NOTIFY_ENDPOINT', 'https://galeria-api-5pel.onrender.com/notify');
+define('NOTIFY_ENDPOINT', 'http://127.0.0.1:3000/notify');
 
 try {
     $conexionDB = new db();
