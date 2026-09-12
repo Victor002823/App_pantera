@@ -17,6 +17,15 @@ crontab /etc/cron.d/keepalive
 # Arranca cron en segundo plano (keepalive)
 cron
 
+# Arranca el tunel cliente de Cloudflare Access hacia la base de datos (pantera_4ki5 en el servidor lince)
+cloudflared access tcp \
+  --hostname pantera-db.mudanzasellince.com \
+  --url 127.0.0.1:5433 \
+  --service-token-id "$CF_SERVICE_TOKEN_ID" \
+  --service-token-secret "$CF_SERVICE_TOKEN_SECRET" &
+
+sleep 3  # dar tiempo a que el tunel levante antes de que la app intente conectar
+
 # Arranca Apache (PHP) en primer plano - proceso principal del contenedor
 cd /var/www/html
 apache2-foreground
