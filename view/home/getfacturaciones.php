@@ -41,7 +41,7 @@ try {
 
 
     $usuario = $_SESSION['usuario']['nombre_usuario'] ?? '';
-    $rol = $_SESSION['usuario']['rol'] ?? '';
+    $rol = $_SESSION['rol'] ?? '';
 
 
     $esAdmin = ($rol === 'admin');
