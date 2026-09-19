@@ -1,0 +1,5 @@
+{
+  "name": "App_pantera",
+  "build": { "dockerfile": "../Dockerfile", "context": ".." },
+  "postCreateCommand": "composer install"
+}
