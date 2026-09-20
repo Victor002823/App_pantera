@@ -234,12 +234,24 @@ function actualizarUI(data) {
     actualizarRuta(orden.origen, orden.destino);
   }
 
-  ajustarVista();
+  ajustarVista(orden);
 }
 
-function ajustarVista() {
-  const puntos = [marcadorChofer, marcadorOrigen, marcadorDestino].filter(Boolean).map(m => m.getLatLng());
-  if (puntos.length && mapa) mapa.fitBounds(L.latLngBounds(puntos), { padding: [50, 50], maxZoom: 15 });
+let pausaAuto=0;
+["touchstart","mousedown"].forEach(e=>document.getElementById("map").addEventListener(e,()=>{pausaAuto=Date.now();},{passive:true}));
+
+function ajustarVista(orden){
+  if(!mapa)return;
+  if(Date.now()-pausaAuto<20000)return;
+  const log=(orden&&orden.activityLog)||{};
+  const ch=marcadorChofer?marcadorChofer.getLatLng():null;
+  const meta=log.pickedUpTime?marcadorDestino:marcadorOrigen;
+  if(ch&&meta&&!log.deliveryTime){
+    mapa.flyToBounds(L.latLngBounds([ch,meta.getLatLng()]),{padding:[70,70],maxZoom:18,duration:1.2});
+    return;
+  }
+  const pts=[marcadorChofer,marcadorOrigen,marcadorDestino].filter(Boolean).map(m=>m.getLatLng());
+  if(pts.length)mapa.fitBounds(L.latLngBounds(pts),{padding:[50,50],maxZoom:15});
 }
 
 async function consultarEstado(manual = false) {

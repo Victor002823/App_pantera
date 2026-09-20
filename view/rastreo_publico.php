@@ -329,7 +329,7 @@ if (!isset($tokenParaVista)) {
   const TOKEN = <?php echo json_encode($tokenParaVista, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?>;
   const INITIAL_ORDER = <?php echo json_encode($ordenDataParaVista, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?>;
 </script>
-<script src="/asset/js/rastreo-map.js?v=19"></script>
+<script src="/asset/js/rastreo-map.js?v=30"></script>
 	
 </body>
 </html>
