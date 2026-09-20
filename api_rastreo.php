@@ -16,12 +16,6 @@ if (!$token || !preg_match('/^[a-f0-9]{32}$/', $token)) {
     exit;
 }
 
-require_once __DIR__ . '/demo_rastreo.php';
-if (rastreoEsDemo($token)) {
-    echo json_encode(rastreoDemoPayload());
-    exit;
-}
-
 $model = new RastreoModel($pdo);
 $liga = $model->obtenerLigaPorToken($token);
 

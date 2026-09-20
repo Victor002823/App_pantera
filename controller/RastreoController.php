@@ -23,17 +23,6 @@ class RastreoController
             return;
         }
 
-        require_once __DIR__ . '/../demo_rastreo.php';
-        if (rastreoEsDemo($token)) {
-            $d = rastreoDemoPayload();
-            $tokenParaVista = $token;
-            $ordenDataParaVista = $d['orden'];
-            $destinoPreview = 'DEMO';
-            $urlActual = '/';
-            require __DIR__ . '/../view/rastreo_publico.php';
-            return;
-        }
-
         $liga = $this->model->obtenerLigaPorToken($token);
 
         if (!$liga) {
