@@ -474,3 +474,53 @@ function closeModal() {
 document.getElementById("modalEditar")?.addEventListener("click", (e) => {
     if (e.target === document.getElementById("modalEditar")) closeModal();
 });
+
+function enviarALince() {
+    const id = document.getElementById("edit_id").value;
+    if (!id) {
+        CustomAlert.show({ title: "Error", text: "No hay cotizacion cargada.", icon: "error" });
+        return;
+    }
+
+    const btn = document.getElementById("btnEnviarLince");
+    const icon = document.getElementById("btnEnviarLinceIcon");
+    const iconOriginal = icon.textContent;
+    btn.disabled = true;
+    icon.classList.add("animate-spin");
+    icon.textContent = "progress_activity";
+
+    fetch("obtener_cotizacion.php?id=" + encodeURIComponent(id))
+    .then(res => res.json())
+    .then(data => {
+        if (!data.success) {
+            CustomAlert.show({ title: "Error", text: "No se pudo obtener la cotizacion.", icon: "error" });
+            return;
+        }
+
+        return fetch("https://control.mudanzasellince.com/view/home/recibir_transferencia.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                clave: "600babb4f567ea354226e024c19748ccf892badf3c51f064f85c0145da0fa292",
+                data: data.data
+            })
+        });
+    })
+    .then(res => res.json())
+    .then(resp => {
+        if (resp.success) {
+            CustomAlert.show({ title: "Enviado", text: "Cotizacion enviada a Lince correctamente (ID nuevo: " + resp.nuevo_id + ").", icon: "success" });
+        } else {
+            CustomAlert.show({ title: "Error", text: resp.error || "No se pudo enviar a Lince.", icon: "error" });
+        }
+    })
+    .catch((err) => {
+        alert("DEBUG error: " + err.message);
+        CustomAlert.show({ title: "Error", text: "Error de red al enviar a Lince.", icon: "error" });
+    })
+    .finally(() => {
+        btn.disabled = false;
+        icon.classList.remove("animate-spin");
+        icon.textContent = iconOriginal;
+    });
+}
