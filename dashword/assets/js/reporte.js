@@ -484,10 +484,9 @@ function enviarALince() {
 
     const btn = document.getElementById("btnEnviarLince");
     const icon = document.getElementById("btnEnviarLinceIcon");
-    const iconOriginal = icon.textContent;
+    const iconClassOriginal = icon.className;
     btn.disabled = true;
-    icon.classList.add("animate-spin");
-    icon.textContent = "progress_activity";
+    icon.className = "bi bi-arrow-repeat animate-spin text-sm";
 
     fetch("obtener_cotizacion.php?id=" + encodeURIComponent(id))
     .then(res => res.json())
@@ -520,7 +519,6 @@ function enviarALince() {
     })
     .finally(() => {
         btn.disabled = false;
-        icon.classList.remove("animate-spin");
-        icon.textContent = iconOriginal;
+        icon.className = iconClassOriginal;
     });
 }

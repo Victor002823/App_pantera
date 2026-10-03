@@ -221,10 +221,9 @@ $_SESSION['last_activity'] = time();
                 <h3 class="font-bold text-slate-900 text-lg">Revisar Cotización</h3>
                 <p class="text-xs text-slate-500">ID de registro: <span id="modalIdDisplay" class="font-mono font-semibold text-blue-600">#—</span></p>
             </div>
-            <div class="flex items-center gap-2">
-                <button id="btnEnviarLince" onclick="enviarALince()" class="text-xs font-semibold bg-slate-900 hover:bg-black text-white px-3 py-2 rounded-lg flex items-center gap-1.5 transition disabled:opacity-60" title="Enviar esta cotizacion a Lince">
-                    <span id="btnEnviarLinceIcon" class="material-symbols-outlined text-sm">file_export</span>
-                    Enviar a Lince
+            <div class="flex items-center gap-2 shrink-0">
+                <button id="btnEnviarLince" onclick="enviarALince()" class="text-slate-500 hover:text-white bg-slate-100 hover:bg-slate-900 w-8 h-8 rounded-full flex items-center justify-center transition disabled:opacity-60" title="Enviar esta cotizacion a Lince">
+                    <i id="btnEnviarLinceIcon" class="bi bi-send text-sm"></i>
                 </button>
                 <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-200/50 transition">
                     <i class="bi bi-x-lg text-sm"></i>
