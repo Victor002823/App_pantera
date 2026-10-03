@@ -295,7 +295,7 @@ $_SESSION['last_activity'] = time();
 <!-- JS de Plantilla y Librerías -->
 <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/reporte.js? v=55"></script>
+<script src="assets/js/reporte.js?v=56"></script>
 
 
 
