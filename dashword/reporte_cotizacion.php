@@ -222,8 +222,8 @@ $_SESSION['last_activity'] = time();
                 <p class="text-xs text-slate-500">ID de registro: <span id="modalIdDisplay" class="font-mono font-semibold text-blue-600">#—</span></p>
             </div>
             <div class="flex items-center gap-2 shrink-0">
-                <button id="btnEnviarLince" onclick="enviarALince()" class="text-slate-500 hover:text-white bg-slate-100 hover:bg-slate-900 w-8 h-8 rounded-full flex items-center justify-center transition disabled:opacity-60" title="Enviar esta cotizacion a Lince">
-                    <i id="btnEnviarLinceIcon" class="bi bi-send text-sm"></i>
+                <button id="btnEnviarLince" type="button" onclick="enviarALince()" title="Transferir servicio" aria-label="Transferir servicio" class="shrink-0 w-8 h-8 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-900 hover:text-white active:bg-slate-900 active:text-white flex items-center justify-center transition disabled:opacity-60" style="width:32px;height:32px;">
+                    <svg id="btnEnviarLinceIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;width:18px;height:18px;flex-shrink:0;"><path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/></svg>
                 </button>
                 <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-200/50 transition">
                     <i class="bi bi-x-lg text-sm"></i>
@@ -294,7 +294,7 @@ $_SESSION['last_activity'] = time();
 <!-- JS de Plantilla y Librerías -->
 <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/reporte.js?v=56"></script>
+<script src="assets/js/reporte.js?v=60"></script>
 
 
 
